@@ -2,6 +2,10 @@ const BUILDINGS = {
   ERNST_NOBS_PLATZ_7: {
     address: "Ernst Nobs Platz 7",
     nickName: "Glass Building"
+  },
+  WERDSTRASSE_25: {
+    address: 'Werdstrasse 25',
+    nickname: 'The Werdino / Post Building'
   }
 };
 
@@ -13,13 +17,11 @@ const FLOORS = {
   THREE: 3,
   FOUR: 4,
   FIVE: 5,
-  SIX: 6
+  SIX: 6,
+  Z: 'Z'
 };
 
-const rooms = {
-  // ------------------------- //
-  // ERNST_NOBS_PLATZ_7
-  // ------------------------- //
+const ERNST_NOBS_PLATZ_7 = {
   adservices: {
     name: "Ad Services",
     floor: FLOORS.NEGATIVE1,
@@ -212,6 +214,134 @@ const rooms = {
     directions: "Lorem ipsum dolar sit amet.",
     ...BUILDINGS.ERNST_NOBS_PLATZ_7
   }
+};
+
+const WERDSTRASSE_25 = {
+  immobilienmanagement: {
+    name: "Immobilien-Management",
+    floor: FLOORS.FIVE,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },
+  unternehmensentwicklung: {
+    name: "Unternehmensentwicklung",
+    floor: FLOORS.FOUR,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },  
+  unternehmenskommunikation: {
+    name: "Unternehmenskommunikation",
+    floor: FLOORS.FOUR,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },  
+  unternehmensleitung: {
+    name: "Unternehmensleitung",
+    floor: FLOORS.FOUR,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },  
+  verwalungsrat: {
+    name: "Verwalungsrat",
+    floor: FLOORS.FOUR,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },  
+  einkauf: {
+    name: "Einkauf",
+    floor: FLOORS.THREE,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },  
+  humanresources: {
+    name: "Human Resources",
+    floor: FLOORS.THREE,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },  
+  advertisingregionalmedien2: {
+    name: "Advertising: Regionalmedien 2",
+    floor: FLOORS.TWO,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },  
+  advertisingsalessupport: {
+    name: "Advertising: Sales Support",
+    floor: FLOORS.TWO,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },  
+  tagsanzeiger: {
+    name: "Tags-Anzeiger",
+    floor: FLOORS.TWO,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },  
+  webvideoteam: {
+    name: "Webvideo-Team",
+    floor: FLOORS.TWO,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },   
+  advertisingregionalmedien1: {
+    name: "Advertising: Regionalmedien 1",
+    floor: FLOORS.ONE,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },    
+  olmeroinformatik: {
+    name: "Olmero Informatik",
+    floor: FLOORS.ONE,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },  
+  informatikschulung: {
+    name: "Informatik Schulung",
+    floor: FLOORS.ONE,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },  
+  sitzungszimmerd11d114: {
+    name: "Sitzungszimmer D 1.1-D 1.14",
+    floor: FLOORS.ONE,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },   
+  hausdienstbouygues: {
+    name: "Hausdienst (Bouygues)",
+    floor: FLOORS.Z,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  }, 
+  lehrlingszimmer: {
+    name: "Lehrlingszimmer",
+    floor: FLOORS.Z,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },  
+  leitungpersonalrestaurantwerdino: {
+    name: "Leitung Personalrestaurant Werdino",
+    floor: FLOORS.Z,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },  
+  hauspost: {
+    name: "Hauspost",
+    floor: FLOORS.ZERO,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },  
+  personalrestaurantwerdino: {
+    name: "Personalrestaurant Werdino",
+    floor: FLOORS.ZERO,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.WERDSTRASSE_25
+  },
+};
+
+const rooms = {
+  ...ERNST_NOBS_PLATZ_7,
+  ...WERDSTRASSE_25,
 };
 
 const allRooms = Object.keys(rooms);
