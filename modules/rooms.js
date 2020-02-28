@@ -1,7 +1,7 @@
 const BUILDINGS = {
   ERNST_NOBS_PLATZ_7: {
     address: "Ernst Nobs Platz 7",
-    niceName: "Glass Building"
+    nickName: "Glass Building"
   }
 };
 
