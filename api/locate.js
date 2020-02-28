@@ -1,17 +1,15 @@
 const qs = require("querystring");
 const { rooms, allRooms } = require("../modules/rooms");
 const responseBuilder = require("../modules/responseBuilder");
+const { slugify } = require('../modules/utilities');
 
 module.exports.locate = async event => {
   const data = qs.parse(event.body);
   const room = data && data.text ? data.text : "";
 
-  const slugifiedRoomName = room
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, "-");
+  const slugifiedRoomName = slugify(room);
 
-  console.log({ allRooms, rooms, slugifiedRoomName });
+  // console.log({ allRooms, rooms, slugifiedRoomName });
   const response = {
     statusCode: 200,
     headers: {
