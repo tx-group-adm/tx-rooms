@@ -19,7 +19,7 @@ describe("api.locate", () => {
     };
 
     const actual = await locate(event);
-    expect(JSON.stringify(actual)).toContain('*Meeting Room:* Boston');
+    expect(JSON.stringify(actual)).toContain('`Boston`');
   });
   
   test("should report invalid rooms", async () => {

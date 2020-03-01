@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`responseBuilder it should generate a search response 1`] = `
+Array [
+  Object {
+    "text": Object {
+      "text": "*5* rooms match your search for \`20\`",
+      "type": "mrkdwn",
+    },
+    "type": "section",
+  },
+  Object {
+    "type": "divider",
+  },
+  Object {
+    "accessory": Object {
+      "alt_text": "Advertising: 20 Minuten 4",
+      "image_url": "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
+      "type": "image",
+    },
+    "text": Object {
+      "text": ":white_small_square: \`Advertising: 20 Minuten\` 
+:white_small_square: *Werdstrasse 21* _\\"The Wood Building\\"_
+:white_small_square: *4*
+:white_small_square: CH-3",
+      "type": "mrkdwn",
+    },
+    "type": "section",
+  },
+  Object {
+    "type": "divider",
+  },
+  Object {
+    "accessory": Object {
+      "alt_text": "20 Minuten (5th fLoor) 5",
+      "image_url": "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
+      "type": "image",
+    },
+    "text": Object {
+      "text": ":white_small_square: \`20 Minuten (5th fLoor)\` 
+:white_small_square: *Werdstrasse 21* _\\"The Wood Building\\"_
+:white_small_square: *5*
+:white_small_square: CH-3",
+      "type": "mrkdwn",
+    },
+    "type": "section",
+  },
+  Object {
+    "type": "divider",
+  },
+  Object {
+    "accessory": Object {
+      "alt_text": "20 Minuten Friday 5",
+      "image_url": "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
+      "type": "image",
+    },
+    "text": Object {
+      "text": ":white_small_square: \`20 Minuten Friday\` 
+:white_small_square: *Werdstrasse 21* _\\"The Wood Building\\"_
+:white_small_square: *5*
+:white_small_square: CH-3",
+      "type": "mrkdwn",
+    },
+    "type": "section",
+  },
+  Object {
+    "type": "divider",
+  },
+  Object {
+    "accessory": Object {
+      "alt_text": "20 Minuten Tillate 5",
+      "image_url": "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
+      "type": "image",
+    },
+    "text": Object {
+      "text": ":white_small_square: \`20 Minuten Tillate\` 
+:white_small_square: *Werdstrasse 21* _\\"The Wood Building\\"_
+:white_small_square: *5*
+:white_small_square: CH-3",
+      "type": "mrkdwn",
+    },
+    "type": "section",
+  },
+  Object {
+    "type": "divider",
+  },
+  Object {
+    "accessory": Object {
+      "alt_text": "20 Minuten (4th Floor) 4",
+      "image_url": "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
+      "type": "image",
+    },
+    "text": Object {
+      "text": ":white_small_square: \`20 Minuten (4th Floor)\` 
+:white_small_square: *Werdstrasse 21* _\\"The Wood Building\\"_
+:white_small_square: *4*
+:white_small_square: CH-3",
+      "type": "mrkdwn",
+    },
+    "type": "section",
+  },
+  Object {
+    "type": "divider",
+  },
+  Object {
+    "elements": Array [
+      Object {
+        "text": Object {
+          "emoji": true,
+          "text": "Send feedback",
+          "type": "plain_text",
+        },
+        "type": "button",
+        "value": "click_me_123",
+      },
+      Object {
+        "options": Array [
+          Object {
+            "text": Object {
+              "emoji": true,
+              "text": ":warning: Report a Problem",
+              "type": "plain_text",
+            },
+            "value": "value-0",
+          },
+        ],
+        "type": "overflow",
+      },
+    ],
+    "type": "actions",
+  },
+]
+`;
