@@ -1,8 +1,12 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "ngrok": "ngrok http 3000",
+    "start": "serverless offline"
   },
   "devDependencies": {
-    "jest": "^25.1.0"
+    "jest": "^25.1.0",
+    "ngrok": "^3.2.7",
+    "serverless-offline": "^6.0.0-alpha.67"
   }
 }
