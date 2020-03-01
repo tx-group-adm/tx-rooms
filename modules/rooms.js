@@ -1,34 +1,40 @@
 const BUILDINGS = {
   ERNST_NOBS_PLATZ_7: {
-    code: 'CH-1',
+    code: "CH-1",
     address: "Ernst Nobs Platz 7",
     nickname: "Glass Building",
-    imgUrl: 'https://api.slack.com/img/blocks/bkb_template_images/palmtree.png',
+    imgUrl: "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png"
   },
   WERDSTRASSE_25: {
-    code: 'CH-2',
+    code: "CH-2",
     address: "Werdstrasse 25",
     nickname: "The Werdino / Post Building",
-    imgUrl: 'https://api.slack.com/img/blocks/bkb_template_images/palmtree.png',
+    imgUrl: "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png"
   },
   WERDSTRASSE_21: {
-    code: 'CH-3',
+    code: "CH-3",
     address: "Werdstrasse 21",
     nickname: "The Wood Building",
-    imgUrl: 'https://api.slack.com/img/blocks/bkb_template_images/palmtree.png',
+    imgUrl: "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png"
+  },
+  STAUFFACHERQUAI_8: {
+    code: "CH-4",
+    address: "Stauffacherquai 8",
+    nickname: "",
+    imgUrl: "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png"
   }
 };
 
 const FLOORS = {
-  NEGATIVE1: 'Floor -1',
-  ZERO: 'Floor 0',
-  ONE: 'Floor 1',
-  TWO: 'Floor 2',
-  THREE: 'Floor 3',
-  FOUR: 'Floor 4',
-  FIVE: 'Floor 5',
-  SIX: 'Floor 6',
-  Z: 'Floor Z'
+  NEGATIVE1: "Floor -1",
+  ZERO: "Floor 0",
+  ONE: "Floor 1",
+  TWO: "Floor 2",
+  THREE: "Floor 3",
+  FOUR: "Floor 4",
+  FIVE: "Floor 5",
+  SIX: "Floor 6",
+  Z: "Floor Z"
 };
 
 const ERNST_NOBS_PLATZ_7 = {
@@ -357,7 +363,7 @@ const WERDSTRASSE_21 = {
     ...BUILDINGS.WERDSTRASSE_21
   },
   "20minuten5thfloor": {
-    name: "20 Minuten (5th fLoor)",
+    name: "20 Minuten (5th floor)",
     floor: FLOORS.FIVE,
     directions: "Lorem ipsum dolar sit amet.",
     ...BUILDINGS.WERDSTRASSE_21
@@ -448,10 +454,104 @@ const WERDSTRASSE_21 = {
   }
 };
 
+const STAUFFACHERQUAI_8 = {
+  "20minutennewsroom": {
+    name: "20 Minuten Newsroom",
+    floor: FLOORS.FIVE,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.STAUFFACHERQUAI_8
+  },
+  finanzundrechnungswesen: {
+    name: "Finanz und Rechnungswesen",
+    floor: FLOORS.FOUR,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.STAUFFACHERQUAI_8
+  },
+  controlling: {
+    name: "Controlling",
+    floor: FLOORS.FOUR,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.STAUFFACHERQUAI_8
+  },
+  leitungbereichfinanzenpersonal: {
+    name: "Leitung Bereich Finanzen & Personal",
+    floor: FLOORS.FOUR,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.STAUFFACHERQUAI_8
+  },
+  sitzungszimmerb41lausanne: {
+    name: "Sitzungszimmer B 4.1 Lausanne",
+    floor: FLOORS.FOUR,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.STAUFFACHERQUAI_8
+  },
+  sitzungszimmerb42genf: {
+    name: "Sitzungszimmer B 4.2 Genf",
+    floor: FLOORS.FOUR,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.STAUFFACHERQUAI_8
+  },
+  tagesanzeiger1: {
+    name: "Tages-Anzeiger (3rd Floor)",
+    floor: FLOORS.THREE,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.STAUFFACHERQUAI_8
+  },
+  sonntagszeitung2: {
+    name: "SonntagsZeitung",
+    floor: FLOORS.TWO,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.STAUFFACHERQUAI_8
+  },
+  tagesanzeiger2: {
+    name: "Tages-Anzeiger (2nd Floor)",
+    floor: FLOORS.TWO,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.STAUFFACHERQUAI_8
+  },
+  encore: {
+    name: "Encore",
+    floor: FLOORS.ONE,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.STAUFFACHERQUAI_8
+  },
+  sonntagszeitung1: {
+    name: "SonntagsZeitung",
+    floor: FLOORS.ONE,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.STAUFFACHERQUAI_8
+  },
+  tagesanzeiger1: {
+    name: "Tages-Anzeiger (1st Floor)",
+    floor: FLOORS.ONE,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.STAUFFACHERQUAI_8
+  },
+  sitzungszimmerb11bern: {
+    name: "Sitzungszimmer B 1.1 Bern",
+    floor: FLOORS.ONE,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.STAUFFACHERQUAI_8
+  },
+  doodle: {
+    name: "Doodle",
+    floor: FLOORS.ZERO,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.STAUFFACHERQUAI_8
+  },  
+  annabellestudio: {
+    name: "Annabelle Studio",
+    floor: FLOORS.ZERO,
+    directions: "Lorem ipsum dolar sit amet.",
+    ...BUILDINGS.STAUFFACHERQUAI_8
+  },
+};
+
 const rooms = {
   ...ERNST_NOBS_PLATZ_7,
   ...WERDSTRASSE_25,
-  ...WERDSTRASSE_21
+  ...WERDSTRASSE_21,
+  ...STAUFFACHERQUAI_8
 };
 
 const allRooms = Object.keys(rooms);
