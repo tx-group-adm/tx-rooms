@@ -4,7 +4,7 @@ exports[`responseBuilder it should generate a search response 1`] = `
 Array [
   Object {
     "text": Object {
-      "text": "*5* rooms match your search for \`20\`",
+      "text": "*5* rooms found for \`20\`",
       "type": "mrkdwn",
     },
     "type": "section",
