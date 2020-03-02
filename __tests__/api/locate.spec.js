@@ -8,18 +8,19 @@ describe("api.locate", () => {
       body: getRealBodyWithText('boston')
     };
 
-    const expected = {
-      statusCode: 200,
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        response_type: "ephemeral",
-      })
-    };
-
     const actual = await locate(event);
     expect(JSON.stringify(actual)).toContain('`Boston`');
+  });  
+  
+  test("returns the required payload", async () => {
+    const event = {
+      body: getRealBodyWithText('boston')
+    };
+
+    const result = await locate(event);
+    expect(result.statusCode).toBe(200);
+    expect(result.headers['Content-Type']).toBe('application/json');
+    expect(result.body).toBeTruthy();
   });
   
   test("should report invalid rooms", async () => {
@@ -27,20 +28,9 @@ describe("api.locate", () => {
       body: getRealBodyWithText('noopRoom')
     };
 
-    const expected = {
-      statusCode: 200,
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        response_type: "ephemeral",
-        text: "The meeting room noopRoom is not recognized"
-      })
-    };
-
     const actual = await locate(event);
 
-    expect(actual).toMatchObject(expected);
+    expect(JSON.stringify(actual)).toContain('*0* rooms found for `noopRoom`');
   });
   
   test("should report invalid rooms with empty data", async () => {
@@ -48,28 +38,15 @@ describe("api.locate", () => {
       body: ''
     };
 
-    const expected = {
-      statusCode: 200,
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        response_type: "ephemeral",
-        text: "The meeting room  is not recognized"
-      })
-    };
-
     const actual = await locate(event);
 
-    expect(actual).toMatchObject(expected);
+    expect(JSON.stringify(actual)).toContain('You need to enter a room name to search for. Try `/room paris`');
   });  
   
   test("should find rooms with special characters provided", async () => {
     const actual1 = await locate({
         body: getRealBodyWithText('VR-Sitzungszimmer')
     });
-
-    expect(JSON.stringify(actual1)).toContain('*Meeting Room:* VR-Sitzungszimmer');
 
     const actual2 = await locate({
         body: getRealBodyWithText('VR----Sitzungszimmer')
@@ -79,8 +56,9 @@ describe("api.locate", () => {
         body: getRealBodyWithText('VR:----&/+Sitzungszimmer')
     });
 
-    expect(JSON.stringify(actual1)).toContain('*Meeting Room:* VR-Sitzungszimmer');
-    expect(JSON.stringify(actual2)).toContain('*Meeting Room:* VR-Sitzungszimmer');
-    expect(JSON.stringify(actual3)).toContain('*Meeting Room:* VR-Sitzungszimmer');
+    expect(JSON.stringify(actual1)).toContain('*1* room found for `VR-Sitzungszimmer`');
+    expect(JSON.stringify(actual2)).toContain('*1* room found for `VR----Sitzungszimmer`');
+    expect(JSON.stringify(actual3)).toContain('*1* room found for `VR:----&/+Sitzungszimmer`');
+    expect(JSON.stringify(actual3)).toContain('VR-Sitzungszimmer');
   });
 });

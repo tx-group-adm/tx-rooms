@@ -16,7 +16,7 @@ const slugify = srcString => {
     .trim()
     .toLowerCase()
     // Remove all characters expect letters and numbers
-    .replace(/[^0-9a-zA-Zä]+/gm, '')
+    .replace(/[^0-9a-zA-Zäü]+/gm, '')
     // remove all whitespace
     .replace(/\s+/g, '');
 }

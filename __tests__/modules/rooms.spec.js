@@ -1,20 +1,19 @@
-const { rooms, allRooms  } = require('../../modules/rooms');
+const { rooms  } = require('../../modules/rooms');
 const { slugify } = require('../../modules/utilities');
 
 describe('rooms', () => {
-    test('should have all allRooms object', () => {
-        expect(Object.keys(rooms)).toMatchObject(allRooms);
-    });
+    test('should all have correct structure', () => {
+        const allRoomObjects = Object.values(rooms);
+        expect.assertions(allRoomObjects.length * 6);
+        const room = rooms[1];
 
-    test('should all have correct slugs', () => {
-        expect.assertions(allRooms.length);
-
-        allRooms.forEach(roomSlug => {
-            const room = rooms[roomSlug];
-            const roomName = room.name;
-            const actualRoomSlug = slugify(roomName);
-
-            expect(actualRoomSlug).toBe(roomSlug);
-        });
+        allRoomObjects.forEach(room => {
+            expect(room.name).toBeTruthy();
+            expect(room.floor).toBeTruthy();
+            expect(room.code).toBeTruthy();
+            expect(room.address).toBeTruthy();
+            expect(typeof room.nickname).toBe('string');
+            expect(room.imgUrl).toBeTruthy();
+        })
     });   
 });

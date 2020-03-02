@@ -1,5 +1,5 @@
 const qs = require("querystring");
-const { rooms, allRooms } = require("../modules/rooms");
+const { rooms } = require("../modules/rooms");
 const responseBuilder = require("../modules/responseBuilder");
 const { slugify } = require("../modules/utilities");
 
@@ -9,7 +9,7 @@ module.exports.locate = async event => {
 
   const slugifiedRoomName = slugify(room);
 
-  // console.log({ event, allRooms, rooms, slugifiedRoomName });
+  // console.log({ event, rooms, slugifiedRoomName });
   const response = {
     statusCode: 200,
     headers: {
@@ -33,13 +33,14 @@ module.exports.locate = async event => {
   const exactMatches = [];
   const partialMatches = [];
 
-  allRooms.forEach(roomSlug => {
+  Object.values(rooms).forEach(roomObj => {
+      const roomSlug = slugify(roomObj.name);
     //   console.log('searching for  ', slugifiedRoomName);
     if (roomSlug.includes(slugifiedRoomName)) {
       if (slugifiedRoomName.length === roomSlug) {
-        exactMatches.push(rooms[roomSlug]);
+        exactMatches.push(roomObj);
       } else {
-        partialMatches.push(rooms[roomSlug]);
+        partialMatches.push(roomObj);
       }
     }
   });

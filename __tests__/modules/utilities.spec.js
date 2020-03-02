@@ -6,6 +6,13 @@ describe('slugify', () => {
         const expected = 'foobar';
         const actual = slugify(fixture);
         expect(actual).toEqual(expected);
+    });   
+    
+    test('should slugify strings with dashes', () => {
+        const fixture = 'foo----------bar'
+        const expected = 'foobar';
+        const actual = slugify(fixture);
+        expect(actual).toEqual(expected);
     });     
     
     test('should return lowercase', () => {
@@ -36,8 +43,8 @@ describe('slugify', () => {
     ); 
     
     test('should allow special alpha chars', () => {
-        const fixture = 'ä';
-        const expected = 'ä';
+        const fixture = 'äü';
+        const expected = 'äü';
         const actual = slugify(fixture);
         expect(actual).toEqual(expected);
     });   
