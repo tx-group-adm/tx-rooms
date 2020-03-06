@@ -34,8 +34,7 @@ module.exports.locate = async event => {
   const partialMatches = [];
 
   Object.values(rooms).forEach(roomObj => {
-      const roomSlug = slugify(roomObj.name);
-    //   console.log('searching for  ', slugifiedRoomName);
+    const roomSlug = slugify(roomObj.name);
     if (roomSlug.includes(slugifiedRoomName)) {
       if (slugifiedRoomName.length === roomSlug) {
         exactMatches.push(roomObj);
@@ -45,23 +44,8 @@ module.exports.locate = async event => {
     }
   });
 
-  //   console.log({exactMatches, partialMatches});
-
   const blocks = responseBuilder(exactMatches, partialMatches, room);
-    response.body = JSON.stringify({ blocks });
+  response.body = JSON.stringify({ blocks });
 
-   return response;
-
-//   // Room was found.
-//   if (exactMatches.length > 0 || partialMatches.length > 0) {
-    
-//   }
-
-//   // The room was not found.
-//   response.body = JSON.stringify({
-//     response_type: "ephemeral",
-//     text: `The meeting room ${room} is not recognized`
-//   });
-
-//   return response;
+  return response;
 };

@@ -4,35 +4,40 @@ const buildings = {
     address: "Ernst Nobs Platz 7",
     nickname: "Glass Building",
     imgUrl: "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
-    icon: ':tumbler_glass:'
+    icon: ':tumbler_glass:',
+    value: 'ERNST_NOBS_PLATZ_7'
   },
   WERDSTRASSE_25: {
     code: "CH-WE-D",
     address: "Werdstrasse 25",
     nickname: "The Werdino / Post Building",
     imgUrl: "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
-    icon: ':postbox:'
+    icon: ':postbox:',
+    value: 'WERDSTRASSE_25'
   },
   WERDSTRASSE_21: {
     code: "CH-WE-C",
     address: "Werdstrasse 21",
     nickname: "The Wood Building",
     imgUrl: "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
-    icon: ':evergreen_tree:'
+    icon: ':evergreen_tree:',
+    value: 'WERDSTRASSE_21'
   },
   STAUFFACHERQUAI_8: {
     code: "CH-WE-B",
     address: "Stauffacherquai 8",
     nickname: "The Classic Building",
     imgUrl: "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
-    icon: ':classical_building:'
+    icon: ':classical_building:',
+    value: 'STAUFFACHERQUAI_8'
   },
   MYSTERIOUS_BUILDING: {
     code: "CH-WE-E",
-    address: "????",
-    nickname: "???",
+    address: "Unknown (please share)",
+    nickname: "Where is this place?",
     imgUrl: "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
-    icon: ':question:'
+    icon: ':question:',
+    value: 'MYSTERIOUS_BUILDING'
   }
 };
 

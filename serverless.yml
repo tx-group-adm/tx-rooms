@@ -53,13 +53,13 @@ provider:
 #    variable1: value1
 
 # you can add packaging information here
-#package:
-#  include:
-#    - include-me.js
-#    - include-me-dir/**
-#  exclude:
-#    - exclude-me.js
-#    - exclude-me-dir/**
+package:
+  exclude:
+    - package.json
+    - yarn.lock
+    - coverage
+    - __tests__
+    - config
 
 functions:
   locate:
@@ -68,8 +68,26 @@ functions:
     events:
       - http:
           path: locate
+          method: post 
+  interact:
+    handler: api/interact.interact
+    memorySize: 128
+    events:
+      - http:
+          path: interact
           method: post
-          cors: true
+  event:
+    timeout: 30
+    handler: api/event.event
+    environment:
+      SLACK_SIGNING_SECRET: ${file(./config/config.${self:provider.stage, }.json):SLACK_SIGNING_SECRET}
+      SLACK_VERIFICATION_TOKEN: ${file(./config/config.${self:provider.stage, }.json):SLACK_VERIFICATION_TOKEN}
+      SLACK_BOT_USER_OAUTH_ACCESS_TOKEN: ${file(./config/config.${self:provider.stage, }.json):SLACK_BOT_USER_OAUTH_ACCESS_TOKEN}
+    memorySize: 128
+    events:
+      - http:
+          path: event
+          method: post
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
