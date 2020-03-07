@@ -1,9 +1,9 @@
 const buildings = {
   ERNST_NOBS_PLATZ_7: {
     code: "CH-WE-A",
-    address: "Ernst Nobs Platz 7",
+    address: "Ernst-Nobs-Platz 7",
     nickname: "Glass Building",
-    imgUrl: "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
+    imgUrl: "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
     icon: ':tumbler_glass:',
     value: 'ERNST_NOBS_PLATZ_7'
   },
@@ -11,7 +11,7 @@ const buildings = {
     code: "CH-WE-D",
     address: "Werdstrasse 25",
     nickname: "The Werdino / Post Building",
-    imgUrl: "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
+    imgUrl: "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
     icon: ':postbox:',
     value: 'WERDSTRASSE_25'
   },
@@ -19,7 +19,7 @@ const buildings = {
     code: "CH-WE-C",
     address: "Werdstrasse 21",
     nickname: "The Wood Building",
-    imgUrl: "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
+    imgUrl: "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
     icon: ':evergreen_tree:',
     value: 'WERDSTRASSE_21'
   },
@@ -27,7 +27,7 @@ const buildings = {
     code: "CH-WE-B",
     address: "Stauffacherquai 8",
     nickname: "The Classic Building",
-    imgUrl: "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
+    imgUrl: "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
     icon: ':classical_building:',
     value: 'STAUFFACHERQUAI_8'
   },
