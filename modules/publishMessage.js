@@ -1,18 +1,20 @@
 /**
- * Kick off the POST request that will publish the home view for the supplied user.
+ * Kick off the POST request that will publish a message to a user.
  * 
- * @param {String} user_id 
- * @param {Object} homeView 
- * @param {String} token 
+ * @param {String} channel 
+ * @param {String} text 
+ * @param {Object} blocks 
+ * @param {String} token
  */
-async function publishHome(user_id, homeView, token) {  
+async function publishMessage(channel, text, blocks, token) {  
     const payload = {
-      view: homeView,
-      token: token,
-      user_id: user_id
+      token,
+      channel,
+      text,
+      blocks
     }
-  
-    return await fetch('https://slack.com/api/views.publish', {
+
+    return await fetch('https://slack.com/api/chat.postMessage', {
       method: 'post',
       headers: {
         "Content-Type": "application/json; charset=UTF-8",
@@ -29,4 +31,4 @@ async function publishHome(user_id, homeView, token) {
     });
   }
 
-  module.exports = publishHome;
+  module.exports = publishMessage;

@@ -1,7 +1,7 @@
 const qs = require("querystring");
-const { rooms } = require("../modules/rooms");
 const responseBuilder = require("../modules/responseBuilder");
 const { slugify } = require("../modules/utilities");
+const search = require("../modules/search");
 
 module.exports.locate = async event => {
   const data = qs.parse(event.body);
@@ -27,22 +27,7 @@ module.exports.locate = async event => {
     return response;
   }
 
-  // Search all room slugs for partial or full matches,
-  // since there are rooms on different floors with the
-  // same names.
-  const exactMatches = [];
-  const partialMatches = [];
-
-  Object.values(rooms).forEach(roomObj => {
-    const roomSlug = slugify(roomObj.name);
-    if (roomSlug.includes(slugifiedRoomName)) {
-      if (slugifiedRoomName.length === roomSlug) {
-        exactMatches.push(roomObj);
-      } else {
-        partialMatches.push(roomObj);
-      }
-    }
-  });
+  const { exactMatches, partialMatches } = search(room);
 
   const blocks = responseBuilder(exactMatches, partialMatches, room);
   response.body = JSON.stringify({ blocks });

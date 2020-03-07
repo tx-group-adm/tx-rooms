@@ -1,18 +1,17 @@
 /**
- * Kick off the POST request that will publish the home view for the supplied user.
+ * Kick off the POST request that will publish modal view for the supplied user.
  * 
- * @param {String} user_id 
- * @param {Object} homeView 
+ * @param {Object} modalView 
  * @param {String} token 
+ * @param {String} triggerId 
  */
-async function publishHome(user_id, homeView, token) {  
+async function publishModal(modalView, token, triggerId) {  
     const payload = {
-      view: homeView,
-      token: token,
-      user_id: user_id
+      view: modalView,
+      trigger_id: triggerId,
     }
-  
-    return await fetch('https://slack.com/api/views.publish', {
+
+    return await fetch('https://slack.com/api/views.open', {
       method: 'post',
       headers: {
         "Content-Type": "application/json; charset=UTF-8",
@@ -29,4 +28,4 @@ async function publishHome(user_id, homeView, token) {
     });
   }
 
-  module.exports = publishHome;
+  module.exports = publishModal;

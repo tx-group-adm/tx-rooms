@@ -60,6 +60,7 @@ package:
     - coverage
     - __tests__
     - config
+    - build/build-floors.js
 
 functions:
   locate:
