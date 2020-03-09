@@ -5,6 +5,7 @@ module.exports = {
     BLOCK_ACTIONS: 'block_actions',
     VIEW_SUBMISSION: 'view_submission',
     HOME: 'home',
+    DIRECT_MESSAGE: 'directmessage',
 
     // These are my custom Block Ids
     APP_HOME_ROOM_BUTTONS: 'APP_HOME_ROOM_BUTTONS',

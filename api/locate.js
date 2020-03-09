@@ -4,12 +4,12 @@ const { slugify } = require("../modules/utilities");
 const search = require("../modules/search");
 
 module.exports.locate = async event => {
+  // console.log('locate\n', {event});
   const data = qs.parse(event.body);
   const room = data && data.text ? data.text : "";
 
   const slugifiedRoomName = slugify(room);
 
-  // console.log({ event, rooms, slugifiedRoomName });
   const response = {
     statusCode: 200,
     headers: {
@@ -17,11 +17,30 @@ module.exports.locate = async event => {
     }
   };
 
-  // If the room text is empty.
+  // If the room text is empty then show the user some help text
   if (slugifiedRoomName.trim() === "") {
     response.body = JSON.stringify({
-      response_type: "ephemeral",
-      text: "You need to enter a room name to search for. Try `/room paris`"
+      "blocks": [
+        {
+          "type": "section",
+          "text": {
+            "type": "mrkdwn",
+            "text": ":mag_right: You need to enter a full (or partial) room name to search for.\n\n*Syntax:* `/room [room to search for]`\n*Example:* `/room paris`"
+          }
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "context",
+          "elements": [
+            {
+              "type": "mrkdwn",
+              "text": "Having trouble? <https://github.com/tamediadigital/tx-rooms/issues|Report an Issue> "
+            }
+          ]
+        }
+      ]
     });
 
     return response;

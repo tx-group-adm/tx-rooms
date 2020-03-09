@@ -25,11 +25,13 @@ const verifySlackRequest = event => {
 
   // Check if the timestamp is older than 5 minutes,
   // If it is older than 5 minutes, we will invalidate the request.
-  const diff = Math.abs(now - (timestamp * 1000));
-  const fiveMinutesInMs = (60 * 5) * 1000;
+  const diff = Math.abs(now - timestamp * 1000);
+  const fiveMinutesInMs = 60 * 5 * 1000;
 
   if (diff > fiveMinutesInMs) {
-    failureReasons.push(`Timestamp failed. now: ${now} - ${timestamp} = ${diff}`)
+    failureReasons.push(
+      `Timestamp failed. now: ${now} - ${timestamp} = ${diff}`
+    );
     isValidTime = false;
   }
 
@@ -43,12 +45,18 @@ const verifySlackRequest = event => {
   const generatedHash = `v0=${hmac.digest("hex")}`;
 
   if (XSlackSignature !== generatedHash) {
-    failureReasons.push('Signatures do not match.');
+    failureReasons.push("Signatures do not match.");
   }
 
   const isValid = isValidTime && XSlackSignature === generatedHash;
 
-  return { isValid, generatedHash, XSlackSignature, type: body.type, failureReasons };
+  return {
+    isValid,
+    generatedHash,
+    XSlackSignature,
+    type: body.type,
+    failureReasons
+  };
 };
 
 module.exports = verifySlackRequest;

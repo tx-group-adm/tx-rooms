@@ -1,13 +1,13 @@
-const DIVIDER = { type: 'divider' };
+const DIVIDER = { type: "divider" };
 
 /**
  * Build the search results header that show the number of results found.
- * 
- * @param {Number} num 
- * @param {String} searchTerm 
+ *
+ * @param {Number} num
+ * @param {String} searchTerm
  */
 function getSearchResultsHeader(num, searchTerm) {
-  const pluralOrNot = num === 1 ? '' : 's';
+  const pluralOrNot = num === 1 ? "" : "s";
 
   return {
     type: "section",
@@ -21,63 +21,50 @@ function getSearchResultsHeader(num, searchTerm) {
 /**
  * Generate the section that will show the room details after the
  * user does a room search.
- * 
- * @param {Object} roomObject 
+ *
+ * @param {Object} roomObject
  * @returns {Object}
  */
 function generateRoomEntry(roomObject) {
   const { name, floor, type, nickname, address, imgUrl, code } = roomObject;
   const typeString = type ? `_(${type})_` : "";
-  const nicknameString = nickname && nickname.length > 0 ? `_\"${nickname}\"_` : '';
+  const nicknameString =
+    nickname && nickname.length > 0 ? `_\"${nickname}\"_` : "";
 
   return {
-      type: "section",
-      text: {
-        type: "mrkdwn",
-        text: `:white_small_square: \`${name}\` ${typeString}\n:white_small_square: *${address}* ${nicknameString}\n:white_small_square: *${floor}*\n:white_small_square: ${code}`
-      },
-      accessory: {
-        type: "image",
-        image_url: `${imgUrl}`,
-        alt_text: `${name} ${floor}`
-      }
+    type: "section",
+    text: {
+      type: "mrkdwn",
+      text: `:white_small_square: \`${name}\` ${typeString}\n:white_small_square: *${address}* ${nicknameString}\n:white_small_square: *${floor}*\n:white_small_square: ${code}`
+    },
+    accessory: {
+      type: "image",
+      image_url: `${imgUrl}`,
+      alt_text: `${name} ${floor}`
     }
+  };
 }
 
 /**
  * Get the footer we will use with the search results.
- * 
+ *
  * @returns {Object}
  */
-const getFooter = () => {
-  return {
-    type: "actions",
+const getFooter = () => (
+  {
+    type: "divider"
+  },
+  {
+    type: "context",
     elements: [
       {
-        type: "button",
-        text: {
-          type: "plain_text",
-          text: "Send feedback",
-          emoji: true
-        },
-        value: "click_me_123"
-      },
-      {
-        type: "overflow",
-        options: [
-          {
-            text: {
-              type: "plain_text",
-              text: ":warning: Report a Problem",
-              emoji: true
-            },
-            value: "value-0"
-          }
-        ]
+        type: "mrkdwn",
+        text:
+          "Having trouble? <https://github.com/tamediadigital/tx-rooms/issues|Report an Issue>"
       }
     ]
   }
-};
+);
 
 /**
  * Build the response to Slack.
@@ -93,15 +80,13 @@ module.exports = function responseBuilder(
 ) {
   const totalMatches = exactMatches.length + partialMatches.length;
 
-  const blocks = [
-    getSearchResultsHeader(totalMatches, searchTerm),
-  ];
+  const blocks = [getSearchResultsHeader(totalMatches, searchTerm)];
 
   exactMatches.forEach(roomObject => {
     blocks.push(DIVIDER);
     blocks.push(generateRoomEntry(roomObject));
-  }); 
-  
+  });
+
   partialMatches.forEach(roomObject => {
     blocks.push(DIVIDER);
     blocks.push(generateRoomEntry(roomObject));

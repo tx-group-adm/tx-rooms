@@ -16,10 +16,6 @@ module.exports.event = async (event, context, callback) => {
   const body = JSON.parse(event.body);
   const token = process.env.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN;
 
-  console.log(event);
-
-  console.log({ body, type: body.type });
-
   const request = verifySlackRequest(event);
 
   if (!request.isValid) {

@@ -1,5 +1,5 @@
 const { buildings } = require("../modules/rooms");
-const { APP_HOME_ROOM_BUTTONS, SEARCH_ROOMS_BUTTON } = require("../modules/constants");
+const { APP_HOME_ROOM_BUTTONS } = require("../modules/constants");
 const generatedFloorMaps = require('../build/generated-floor-maps');
 
 /**
@@ -52,32 +52,6 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
         text: {
           type: "mrkdwn",
           text:
-            "*Need to search for a room by name?* Use the slash command `/room` from anywhere in Slack, or use the search button below."
-        }
-      },
-      {
-        type: "actions",
-        elements: [
-          {
-            type: "button",
-            style: "primary",
-            text: {
-              type: "plain_text",
-              text: ":mag_right: Search for room",
-              emoji: true
-            },
-            value: SEARCH_ROOMS_BUTTON
-          }
-        ]
-      },
-      {
-        type: "divider"
-      },
-      {
-        type: "section",
-        text: {
-          type: "mrkdwn",
-          text:
             "Click on one of the buttons below to see the room directory for each building."
         }
       },
@@ -121,7 +95,7 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
           {
             type: "mrkdwn",
             text:
-              "Made with ❤️ by Michael Wuergler so he can stop getting lost."
+              "\nMade with ❤️ by Michael Wuergler so he can stop getting lost."
           }
         ]
       }
