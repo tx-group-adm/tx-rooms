@@ -30,14 +30,6 @@ const buildings = {
     imgUrl: "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
     icon: ':classical_building:',
     value: 'STAUFFACHERQUAI_8'
-  },
-  MYSTERIOUS_BUILDING: {
-    code: "CH-WE-E",
-    address: "Unknown (please share)",
-    nickname: "Where is this place?",
-    imgUrl: "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
-    icon: ':question:',
-    value: 'MYSTERIOUS_BUILDING'
   }
 };
 
@@ -52,22 +44,6 @@ const FLOORS = {
   FIVE: 'Floor 5',
   SIX: 'Floor 6',
 };
-
-/**
- * This space is a mystery to me, because we have an entry in Robin, but 
- * nothing about it in the building directories.
- * 
- * In descending order to save us from sorting them 
- * later when we build the home tab. 
- */
-const MYSTERIOUS_BUILDING = [
-  {
-    name: 'Bellevue',
-    floor: FLOORS.SIX,
-    robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11698/spaces/54014',
-    ...buildings.MYSTERIOUS_BUILDING
-  }
-];
 
 /**
  * ERNST_NOBS_PLATZ_7 Rooms.
@@ -272,6 +248,12 @@ const WERDSTRASSE_25 = [
   {
     name: "Immobilien-Management",
     floor: FLOORS.FIVE,
+    ...buildings.WERDSTRASSE_25
+  },
+  {
+    name: 'Bellevue',
+    floor: FLOORS.FOUR,
+    robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11698/spaces/54014',
     ...buildings.WERDSTRASSE_25
   },
   {
@@ -725,7 +707,6 @@ const rooms = [
   ...WERDSTRASSE_25,
   ...WERDSTRASSE_21,
   ...STAUFFACHERQUAI_8,
-  ...MYSTERIOUS_BUILDING,
 ];
 
 module.exports = {

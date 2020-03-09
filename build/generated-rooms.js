@@ -379,6 +379,18 @@ module.exports = [
     "slug": "immobilienmanagement"
   },
   {
+    "name": "Bellevue",
+    "floor": "Floor 4",
+    "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11698/spaces/54014",
+    "code": "CH-WE-D",
+    "address": "Werdstrasse 25",
+    "nickname": "The Werdino / Post Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
+    "icon": ":postbox:",
+    "value": "WERDSTRASSE_25",
+    "slug": "bellevue"
+  },
+  {
     "name": "Unternehmensentwicklung",
     "floor": "Floor 4",
     "code": "CH-WE-D",
@@ -1267,17 +1279,5 @@ module.exports = [
     "icon": ":classical_building:",
     "value": "STAUFFACHERQUAI_8",
     "slug": "annabellestudio"
-  },
-  {
-    "name": "Bellevue",
-    "floor": "Floor 6",
-    "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11698/spaces/54014",
-    "code": "CH-WE-E",
-    "address": "Unknown (please share)",
-    "nickname": "Where is this place?",
-    "imgUrl": "https://api.slack.com/img/blocks/bkb_template_images/palmtree.png",
-    "icon": ":question:",
-    "value": "MYSTERIOUS_BUILDING",
-    "slug": "bellevue"
   }
 ]
