@@ -4,7 +4,6 @@ const { slugify } = require("../modules/utilities");
 const search = require("../modules/search");
 
 module.exports.locate = async event => {
-  // console.log('locate\n', {event});
   const data = qs.parse(event.body);
   const room = data && data.text ? data.text : "";
 

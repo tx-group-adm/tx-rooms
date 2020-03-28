@@ -24,6 +24,16 @@ To get started:
 
 :rainbow: Now your app will use your local lambda functions to respond to your Slack interactions
 
+
+## Updating the Room Directory
+
+If you need to make any changes to the room entries, simply do the following:
+
+1. Edit the file `modules/rooms.js` with your room updates
+2. Run `yarn run build`
+
+> :bulb: Running the command `yarn run build` will auto-generate some static files that are used in various parts of the app. The idea is that we can save in computation time (which costs money) if we use static files where we can get away with it.
+
 ---
 
 Made with :heart: by [Michael Wuergler](https://github.com/radiovisual) so he can stop getting lost at work. 

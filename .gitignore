@@ -8,3 +8,5 @@ jspm_packages
 coverage
 
 config
+
+yarn-error.log

@@ -2,7 +2,8 @@
   "scripts": {
     "test": "jest",
     "ngrok": "ngrok http 3000",
-    "start": "serverless offline"
+    "start": "serverless offline",
+    "build": "node build/build-floors.js && node build/build-rooms.js"
   },
   "devDependencies": {
     "jest": "^25.1.0",
