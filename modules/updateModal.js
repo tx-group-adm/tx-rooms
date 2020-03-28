@@ -4,13 +4,13 @@
  * @param {Object} modalView
  * @param {String} viewId
  * @param {String} token
- * @param {String} triggerId
+ * @param {String} hash
  */
-async function updateModal(modalView, viewId, token, triggerId) {
+async function updateModal(modalView, viewId, token, hash) {
   const payload = {
     view: modalView,
     view_id: viewId,
-    trigger_id: triggerId
+    hash
   };
 
   console.log('updateModal\n', JSON.stringify(payload, null, 2));

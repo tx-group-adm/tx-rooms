@@ -1,4 +1,4 @@
-const { SEARCH_ROOMS_TEXT_INPUT } = require('./constants');
+const { SEARCH_ROOMS_MODAL, SEARCH_ROOMS_TEXT_INPUT, SEARCH_ROOMS_TEXT_INPUT_BLOCK } = require('./constants');
 
 /**
  * Return the view needed to construct the search modal.
@@ -7,6 +7,7 @@ const { SEARCH_ROOMS_TEXT_INPUT } = require('./constants');
  */
 const getSearchModal = () => ({
   type: "modal",
+  callback_id: SEARCH_ROOMS_MODAL,
   title: {
     type: "plain_text",
     text: "TX Room Search",
@@ -36,9 +37,10 @@ const getSearchModal = () => ({
     },
     {
       type: "input",
-      block_id: SEARCH_ROOMS_TEXT_INPUT,
+      block_id: SEARCH_ROOMS_TEXT_INPUT_BLOCK,
       element: {
-        type: "plain_text_input"
+        type: "plain_text_input",
+        action_id: SEARCH_ROOMS_TEXT_INPUT
       },
       label: {
         type: "plain_text",

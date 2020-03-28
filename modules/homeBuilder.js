@@ -1,5 +1,5 @@
 const { buildings } = require("../modules/rooms");
-const { APP_HOME_ROOM_BUTTONS } = require("../modules/constants");
+const { APP_HOME_ROOM_BUTTONS, SEARCH_ROOMS_BUTTON } = require("../modules/constants");
 const generatedFloorMaps = require('../build/generated-floor-maps');
 
 /**
@@ -47,6 +47,32 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
   return {
     type: "home",
     blocks: [
+      {
+        type: "section",
+        text: {
+          type: "mrkdwn",
+          text: "Click the button below to *search for a room* by name (or partial name)"
+        }
+      },
+      {
+        type: "actions",
+        block_id: SEARCH_ROOMS_BUTTON,
+        elements: [
+          {
+          type: "button",
+          style: "primary",
+          text: {
+            type: "plain_text",
+            text: ":mag_right: Search for room",
+            emoji: true
+          },
+          value: SEARCH_ROOMS_BUTTON
+        }
+        ]
+      }, 
+      { 
+        type: "divider" 
+      },
       {
         type: "section",
         text: {
