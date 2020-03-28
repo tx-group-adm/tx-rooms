@@ -1,11 +1,14 @@
 const { buildings } = require("../modules/rooms");
-const { APP_HOME_ROOM_BUTTONS, SEARCH_ROOMS_BUTTON } = require("../modules/constants");
-const generatedFloorMaps = require('../build/generated-floor-maps');
+const {
+  APP_HOME_ROOM_BUTTONS,
+  SEARCH_ROOMS_BUTTON
+} = require("../modules/constants");
+const generatedFloorMaps = require("../build/generated-floor-maps");
 
 /**
  * Get the row of room buttons, and select the active button.
- * @param {Object} buildings 
- * @param {Object} selectedBuilding 
+ * @param {Object} buildings
+ * @param {Object} selectedBuilding
  * @returns {Object}
  */
 const getRoomButtons = (buildings, selectedBuilding) => {
@@ -51,7 +54,8 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
         type: "section",
         text: {
           type: "mrkdwn",
-          text: "Click the button below to *search for a room* by name (or partial name)"
+          text:
+            "Click the button below to *search for a room* by name (or partial name)"
         }
       },
       {
@@ -59,19 +63,19 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
         block_id: SEARCH_ROOMS_BUTTON,
         elements: [
           {
-          type: "button",
-          style: "primary",
-          text: {
-            type: "plain_text",
-            text: ":mag_right: Search for room",
-            emoji: true
-          },
-          value: SEARCH_ROOMS_BUTTON
-        }
+            type: "button",
+            style: "primary",
+            text: {
+              type: "plain_text",
+              text: ":mag_right: Search for room",
+              emoji: true
+            },
+            value: SEARCH_ROOMS_BUTTON
+          }
         ]
-      }, 
-      { 
-        type: "divider" 
+      },
+      {
+        type: "divider"
       },
       {
         type: "section",
@@ -109,7 +113,14 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
         type: "section",
         text: {
           type: "mrkdwn",
-          text: generatedFloorMaps[buildingObj.value]
+          text: `${generatedFloorMaps[buildingObj.value]} \n\n `
+        }
+      },
+      {
+        type: "section",
+        text: {
+          type: "mrkdwn",
+          text: "\n\n "
         }
       },
       {
@@ -121,7 +132,7 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
           {
             type: "mrkdwn",
             text:
-              "\nMade with ❤️ by Michael Wuergler so he can stop getting lost."
+              "\nMade with ❤️ by *Michael Wuergler* so he can stop getting lost at work.\n<https://github.com/tamediadigital/tx-rooms/issues|Report a Problem>"
           }
         ]
       }
