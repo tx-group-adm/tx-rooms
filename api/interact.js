@@ -10,10 +10,12 @@ const search = require("../modules/search");
 const {
   BLOCK_ACTIONS,
   HOME,
+  SHORTCUT,
   APP_HOME_ROOM_BUTTONS,
   SEARCH_ROOMS_BUTTON,
   VIEW_SUBMISSION,
   MODAL,
+  LOCATE_VIA_SHORTCUT,
   SEARCH_ROOMS_TEXT_INPUT_BLOCK,
   SEARCH_ROOMS_TEXT_INPUT,
   SEARCH_ROOMS_MODAL
@@ -37,7 +39,9 @@ module.exports.interact = async (event, context, callback) => {
   const action = payload.actions && payload.actions[0];
   const actionBlockId = action && action.block_id;
   const triggerId = payload && payload.trigger_id;
-  const callbackId = payload && payload.view && payload.view.callback_id;
+  const callbackId =
+    (payload && payload.view && payload.view.callback_id) ||
+    (payload && payload.callback_id);
 
   const token = process.env.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN;
 
@@ -46,13 +50,19 @@ module.exports.interact = async (event, context, callback) => {
   };
 
   // Useful for debugging in Cloudwatch Logs
-  console.log(
-    "interact",
-    { payload, payloadType, payloadViewType, userId, action, actionBlockId, callbackId }
-  );
+  console.log("interact", {
+    payload,
+    payloadType,
+    payloadViewType,
+    userId,
+    action,
+    triggerId,
+    actionBlockId,
+    callbackId
+  });
 
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  // Detect button interactions from the Home 
+  // Detect button interactions from the Home
   // Tab that switch the floor plans
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   if (
@@ -67,7 +77,7 @@ module.exports.interact = async (event, context, callback) => {
   }
 
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  // Detect the "Search for room" button 
+  // Detect the "Search for room" button
   // click on the Home Tab
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   if (
@@ -79,7 +89,15 @@ module.exports.interact = async (event, context, callback) => {
   }
 
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  // Detect the "Search" modal was submitted, 
+  // Detect the "FIND A TX GROUP ROOM" shortcut
+  // was clicked.
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  if (payloadType === SHORTCUT && callbackId === LOCATE_VIA_SHORTCUT) {
+    await openModal(getSearchModal(), token, triggerId);
+  }
+
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  // Detect the "Search" modal was submitted,
   // which will start the new search
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   if (
@@ -87,7 +105,7 @@ module.exports.interact = async (event, context, callback) => {
     payloadViewType === MODAL &&
     callbackId === SEARCH_ROOMS_MODAL
   ) {
-    // Grab the text submitted by the user by first 
+    // Grab the text submitted by the user by first
     // grabbing the input field value
     const payloadStateValues =
       payload &&
