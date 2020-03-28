@@ -58,6 +58,7 @@ This app uses the Serverless framework and Lambda functions. You can inspect the
 If you need to make any changes to the room entries, simply do the following:
 
 1. Edit the file `modules/rooms.js` with your room updates
+
 2. Run `npm run build`
 
 > :bulb: Running the command `npm run build` will auto-generate some static files that are used in various parts of the app. The idea is that we can save in computation time (which costs money) if we use static files where we can get away with it.
@@ -65,13 +66,13 @@ If you need to make any changes to the room entries, simply do the following:
 
 ## Deploying
 
-**To deploy to your staging enviornment**
+**To deploy to your `staging` enviornment**
 
 ```
 $ serverless deploy --stage dev
 ```
 
-**To deploy to your production enviornment**
+**To deploy to your `production` enviornment**
 
 ```
 $ serverless deploy --stage prod
