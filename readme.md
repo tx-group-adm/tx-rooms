@@ -4,11 +4,11 @@
 
 # TX Rooms
 
-> :eyes: **Have you ever been lost in the TX Groups building in Zürich?** _(I have!)_ :wave:
+> :eyes: **Have you ever been lost in the TX Groups building in Zürich?**
 
-> :see_no_evil: **Have you ever been invited to a meeting in a room you have never heard of?** _(I have!)_ :wave:
+> :hear_no_evil: **Have you ever been invited to a meeting in a room you have never heard of?**
 
-> :running_man: **Did you just find out 2 minutes before your meeting starts that your meeting room is 10 minutes away?** _(I have!)_ :wave:
+> :running_man: **Have you ever learned 2 minutes before a meeting that the room is 6 minutes away?**
 
 **TX Rooms Slack Bot is here to help you find your way** :tm: :rainbow: :sparkles:
 
