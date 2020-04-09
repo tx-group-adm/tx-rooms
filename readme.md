@@ -45,7 +45,6 @@ To get started:
 1. In a terminal window run `npm run start` to get lambda running locally
 2. In a **new** terminal window run `npm run ngrok`
 3. Copy the ngrok url into your [Slack App's](https://api.slack.com/apps) **Event Subscription**, **Slash Commands** and **Interactivity & Shortcuts** 
-4. Make sure that you have 
 
 :rainbow: Now your app will use your local lambda functions to respond to your Slack interactions
 
