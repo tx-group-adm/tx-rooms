@@ -61,6 +61,13 @@ jobs:
                       ./.circleci/helpers/setEnvironmentVariables.sh
 
             - run:
+                  name: Set AWS credentials based on stage
+                  command: |
+                      echo "Setting $STAGE-credentials"
+                      chmod u+x ~/project/.circleci/helpers/setAwsCredentials.sh
+                      ./.circleci/helpers/setAwsCredentials.sh
+
+            - run:
                   name: Deploy to AWS Lambda
                   command: |
                       if [ $STAGE == 'prod' ]
