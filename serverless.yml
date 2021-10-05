@@ -1,47 +1,52 @@
 service: tx-rooms
 
 plugins:
-  - serverless-offline
+    - serverless-offline
 
 provider:
-  name: aws
-  runtime: nodejs12.x
-  region: eu-central-1
+    name: aws
+    runtime: nodejs12.x
+    region: eu-central-1
+
+iamRoleStatements:
+    - Effect: Allow
+      Action:
+          - lambda:InvokeFunction
+      Resource: "*"
 
 package:
-  exclude:
-    - package.json
-    - yarn.lock
-    - coverage
-    - __tests__
-    - config
-    - build/build-floors.js
+    exclude:
+        - package.json
+        - yarn.lock
+        - coverage
+        - __tests__
+        - config
+        - build/build-floors.js
 
 functions:
-  locate:
-    handler: api/locate.locate
-    memorySize: 128
-    events:
-      - http:
-          path: locate
-          method: post 
-  interact:
-    handler: api/interact.interact
-    memorySize: 128
-    events:
-      - http:
-          path: interact
-          method: post
-  event:
-    timeout: 30
-    handler: api/event.event
-    environment:
-      SLACK_SIGNING_SECRET: ${file(./config/config.${self:provider.stage, }.json):SLACK_SIGNING_SECRET}
-      SLACK_VERIFICATION_TOKEN: ${file(./config/config.${self:provider.stage, }.json):SLACK_VERIFICATION_TOKEN}
-      SLACK_BOT_USER_OAUTH_ACCESS_TOKEN: ${file(./config/config.${self:provider.stage, }.json):SLACK_BOT_USER_OAUTH_ACCESS_TOKEN}
-    memorySize: 128
-    events:
-      - http:
-          path: event
-          method: post
-
+    locate:
+        handler: api/locate.locate
+        memorySize: 128
+        events:
+            - http:
+                  path: locate
+                  method: post
+    interact:
+        handler: api/interact.interact
+        memorySize: 128
+        events:
+            - http:
+                  path: interact
+                  method: post
+    event:
+        timeout: 30
+        handler: api/event.event
+        environment:
+            SLACK_SIGNING_SECRET: ${file(./config/config.${self:provider.stage, }.json):SLACK_SIGNING_SECRET}
+            SLACK_VERIFICATION_TOKEN: ${file(./config/config.${self:provider.stage, }.json):SLACK_VERIFICATION_TOKEN}
+            SLACK_BOT_USER_OAUTH_ACCESS_TOKEN: ${file(./config/config.${self:provider.stage, }.json):SLACK_BOT_USER_OAUTH_ACCESS_TOKEN}
+        memorySize: 128
+        events:
+            - http:
+                  path: event
+                  method: post
