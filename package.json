@@ -1,14 +1,31 @@
 {
+  "name": "tx-rooms",
+  "version": "1.0.0",
+  "description": "A Slack bot which helps you find meeting rooms in the TX Group office in Zürich",
+  "author": {
+    "name": "Michael Wuergler",
+    "email": "mw@doodle.com",
+    "url": "https://github.com/radiovisual"
+  },
   "scripts": {
     "test": "jest",
     "ngrok": "ngrok http 3000",
     "start": "serverless offline",
-    "build": "node build/build-floors.js && node build/build-rooms.js"
+    "build": "node build/build-floors.js && node build/build-rooms.js",
+    "deploy": "sls deploy -s dev",
+    "deploy-prod": "sls deploy -s prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamedia-pmd/tx-rooms.git"
   },
   "devDependencies": {
     "jest": "^25.1.0",
     "ngrok": "^3.2.7",
+    "serverless": "^2.61.0",
     "serverless-offline": "^6.0.0-alpha.67"
   },
-  "dependencies": {}
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
 }
