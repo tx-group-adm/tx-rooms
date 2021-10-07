@@ -15,6 +15,10 @@ provider:
                   Action:
                       - lambda:InvokeFunction
                   Resource: "*"
+    environment:
+        SLACK_SIGNING_SECRET: ${file(./config/config.${self:provider.stage, 'dev'}.json):SLACK_SIGNING_SECRET}
+        SLACK_VERIFICATION_TOKEN: ${file(./config/config.${self:provider.stage, 'dev'}.json):SLACK_VERIFICATION_TOKEN}
+        SLACK_BOT_USER_OAUTH_ACCESS_TOKEN: ${file(./config/config.${self:provider.stage, 'dev'}.json):SLACK_BOT_USER_OAUTH_ACCESS_TOKEN}
 
 package:
     exclude:
@@ -43,10 +47,6 @@ functions:
     event:
         timeout: 30
         handler: api/event.event
-        environment:
-            SLACK_SIGNING_SECRET: ${file(./config/config.${self:provider.stage, 'dev'}.json):SLACK_SIGNING_SECRET}
-            SLACK_VERIFICATION_TOKEN: ${file(./config/config.${self:provider.stage, 'dev'}.json):SLACK_VERIFICATION_TOKEN}
-            SLACK_BOT_USER_OAUTH_ACCESS_TOKEN: ${file(./config/config.${self:provider.stage, 'dev'}.json):SLACK_BOT_USER_OAUTH_ACCESS_TOKEN}
         memorySize: 128
         events:
             - http:
