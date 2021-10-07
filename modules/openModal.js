@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+const { WebClient } = require("@slack/web-api");
 /**
  * Kick off the POST request that will publish modal view for the supplied user.
  *
@@ -8,27 +8,17 @@ import fetch from "node-fetch";
  * @param {String} channelId
  */
 async function openModal(modalView, token, triggerId, channelId) {
-    const payload = {
-        view: modalView,
-        trigger_id: triggerId,
-    };
-
-    return await fetch("https://slack.com/api/views.open", {
-        method: "post",
-        headers: {
-            "Content-Type": "application/json; charset=UTF-8",
-            Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify(payload),
-    })
-        .then((response) => response.json())
-        .then(function (data) {
-            console.log("Request succeeded with JSON response", data);
-            return data;
-        })
-        .catch(function (error) {
-            console.log("Request failed", error);
+    try {
+        const webClient = new WebClient(token);
+        const response = await webClient.views.open({
+            view: modalView,
+            trigger_id: triggerId,
         });
+
+        console.log("Request succeeded with JSON response", response);
+    } catch (err) {
+        console.log("Request failed", error);
+    }
 }
 
 module.exports = openModal;
