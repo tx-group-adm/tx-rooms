@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+const { WebClient } = require("@slack/web-api");
 
 /**
  * Kick off the POST request that will publish the home view for the supplied user.
@@ -8,27 +8,17 @@ import fetch from "node-fetch";
  * @param {String} token
  */
 async function publishHome(user_id, homeView, token) {
-    const payload = {
-        view: homeView,
-        token: token,
-        user_id: user_id,
-    };
-
-    return await fetch("https://slack.com/api/views.publish", {
-        method: "post",
-        headers: {
-            "Content-Type": "application/json; charset=UTF-8",
-            Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify(payload),
-    })
-        .then((response) => response.json())
-        .then(function (data) {
-            console.log("Request succeeded with JSON response", data);
-        })
-        .catch(function (error) {
-            console.log("Request failed", error);
+    try {
+        const webClient = new WebClient(token);
+        const response = await webClient.views.publish({
+            view: homeView,
+            token: token,
+            user_id: user_id,
         });
+        console.log("Request succeeded with JSON response", response);
+    } catch (err) {
+        console.log("Request failed", err);
+    }
 }
 
 module.exports = publishHome;

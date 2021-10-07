@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+const { WebClient } = require("@slack/web-api");
 
 /**
  * Kick off the POST request that will update the modal view for the supplied user.
@@ -9,29 +9,20 @@ import fetch from "node-fetch";
  * @param {String} hash
  */
 async function updateModal(modalView, viewId, token, hash) {
-    const payload = {
-        view: modalView,
-        view_id: viewId,
-        hash,
-    };
+    try {
+        const webClient = new WebClient(token);
 
-    console.log("updateModal\n", JSON.stringify(payload, null, 2));
+        console.log("updateModal\n", JSON.stringify(payload, null, 2));
 
-    return await fetch("https://slack.com/api/views.update", {
-        method: "post",
-        headers: {
-            "Content-Type": "application/json; charset=UTF-8",
-            Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify(payload),
-    })
-        .then((response) => response.json())
-        .then(function (data) {
-            console.log("Request succeeded with JSON response", data);
-        })
-        .catch(function (error) {
-            console.log("Request failed", error);
+        const response = await webClient.views.update({
+            view: modalView,
+            view_id: viewId,
+            hash,
         });
+        console.log("Request succeeded with JSON response", response);
+    } catch (err) {
+        console.log("Request failed", err);
+    }
 }
 
 module.exports = updateModal;
