@@ -2,6 +2,7 @@
   "name": "tx-rooms",
   "version": "1.0.0",
   "description": "A Slack bot which helps you find meeting rooms in the TX Group office in Zürich",
+  "type": "module",
   "author": {
     "name": "Michael Wuergler",
     "email": "mw@doodle.com",
