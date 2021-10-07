@@ -8,12 +8,13 @@ provider:
     runtime: nodejs12.x
     region: eu-central-1
     stage: ${opt:stage, 'dev'}
-
-iamRoleStatements:
-    - Effect: Allow
-      Action:
-          - lambda:InvokeFunction
-      Resource: "*"
+    iam:
+        role:
+            statements:
+                - Effect: Allow
+                  Action:
+                      - lambda:InvokeFunction
+                  Resource: "*"
 
 package:
     exclude:
