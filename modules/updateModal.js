@@ -1,4 +1,4 @@
-const fetch = require("node-fetch");
+import fetch from "node-fetch";
 
 /**
  * Kick off the POST request that will update the modal view for the supplied user.
