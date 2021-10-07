@@ -7,6 +7,7 @@ provider:
     name: aws
     runtime: nodejs12.x
     region: eu-central-1
+    stage: ${opt:stage, 'dev'}
 
 iamRoleStatements:
     - Effect: Allow
