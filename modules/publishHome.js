@@ -1,4 +1,4 @@
-const fetch = require("node-fetch");
+import fetch from "node-fetch";
 
 /**
  * Kick off the POST request that will publish the home view for the supplied user.
