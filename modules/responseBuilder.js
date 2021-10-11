@@ -60,7 +60,7 @@ const getFooter = () => (
       {
         type: "mrkdwn",
         text:
-          "Having trouble? <https://github.com/tamediadigital/tx-rooms/issues|Report an Issue>"
+          "Having trouble? <https://github.com/tamedia-pmd/tx-rooms/issues|Report an Issue>"
       }
     ]
   }
