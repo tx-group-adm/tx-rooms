@@ -35,7 +35,7 @@ module.exports.locate = async event => {
           "elements": [
             {
               "type": "mrkdwn",
-              "text": "Having trouble? <https://github.com/tamediadigital/tx-rooms/issues|Report an Issue> "
+              "text": "Having trouble? <https://github.com/tamedia-pmd/tx-rooms/issues|Report an Issue> "
             }
           ]
         }

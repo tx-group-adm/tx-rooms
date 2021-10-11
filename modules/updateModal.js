@@ -12,8 +12,6 @@ async function updateModal(modalView, viewId, token, hash) {
     try {
         const webClient = new WebClient(token);
 
-        // console.log("updateModal\n", JSON.stringify(payload, null, 2));
-
         const response = await webClient.views.update({
             view: modalView,
             view_id: viewId,

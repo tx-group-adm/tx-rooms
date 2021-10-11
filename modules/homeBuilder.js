@@ -50,33 +50,34 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
   return {
     type: "home",
     blocks: [
-      {
-        type: "section",
-        text: {
-          type: "mrkdwn",
-          text:
-            "Click the button below to *search for a room* by name (or partial name)"
-        }
-      },
-      {
-        type: "actions",
-        block_id: SEARCH_ROOMS_BUTTON,
-        elements: [
-          {
-            type: "button",
-            style: "primary",
-            text: {
-              type: "plain_text",
-              text: ":mag_right: Search for room",
-              emoji: true
-            },
-            value: SEARCH_ROOMS_BUTTON
-          }
-        ]
-      },
-      {
-        type: "divider"
-      },
+      // FIXME: The SEARCH_ROOMS_BUTTON is not updating with search results.
+      // {
+      //   type: "section",
+      //   text: {
+      //     type: "mrkdwn",
+      //     text:
+      //       "Click the button below to *search for a room* by name (or partial name)"
+      //   }
+      // },
+      // {
+      //   type: "actions",
+      //   block_id: SEARCH_ROOMS_BUTTON,
+      //   elements: [
+      //     {
+      //       type: "button",
+      //       style: "primary",
+      //       text: {
+      //         type: "plain_text",
+      //         text: ":mag_right: Search for room",
+      //         emoji: true
+      //       },
+      //       value: SEARCH_ROOMS_BUTTON
+      //     }
+      //   ]
+      // },
+      // {
+      //   type: "divider"
+      // },
       {
         type: "section",
         text: {
@@ -117,14 +118,17 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
         }
       },
       {
-        type: "section",
-        text: {
-          type: "mrkdwn",
-          text: "\n\n "
+        "type": "divider"
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "> :bulb: *Tip:* Use the slash command `/rooms` (or the TX Rooms Shortcut menu) in any Slack channel to find a meeting room. For example, to search for the Paris meeting room: `/rooms paris`. You can even search for partial room names."
         }
       },
       {
-        type: "divider"
+        "type": "divider"
       },
       {
         type: "context",
@@ -132,7 +136,7 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
           {
             type: "mrkdwn",
             text:
-              "\nMade with ❤️ by *Michael Wuergler* so he can stop getting lost at work.\n<https://github.com/tamediadigital/tx-rooms/issues|Report a Problem>"
+              "\nMade with ❤️ by *Michael Wuergler* so he can stop getting lost at work.\n<https://github.com/tamedia-pmd/tx-rooms/issues|Report a Problem>"
           }
         ]
       }

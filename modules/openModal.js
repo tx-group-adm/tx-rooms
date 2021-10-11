@@ -16,6 +16,7 @@ async function openModal(modalView, token, triggerId, channelId) {
         });
 
         console.log("Request succeeded with JSON response", response);
+        return response;
     } catch (err) {
         console.log("Request failed", err);
     }
