@@ -133,7 +133,7 @@ module.exports.interact = async (event, context, callback) => {
 
         // And now update the modal to show the search results
         // FIXME: updateModal fails because we don't have the view.id and view.hash
-        // of the reponse made from openModal. This information is lost between lambda calls
+        // of the response made from openModal. This information is lost between lambda calls
         await updateModal(
             {
                 ...getModalHeader("Search results", "OK", "Cancel"),
