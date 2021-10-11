@@ -2,6 +2,7 @@ service: tx-rooms
 
 plugins:
     - serverless-offline
+    - serverless-plugin-warmup
 
 provider:
     name: aws
@@ -32,6 +33,7 @@ package:
 functions:
     locate:
         handler: api/locate.locate
+        warmup: true
         memorySize: 128
         events:
             - http:
@@ -39,6 +41,7 @@ functions:
                   method: post
     interact:
         handler: api/interact.interact
+        warmup: true
         memorySize: 128
         events:
             - http:
@@ -47,6 +50,7 @@ functions:
     event:
         timeout: 30
         handler: api/event.event
+        warmup: true
         memorySize: 128
         events:
             - http:
