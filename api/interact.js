@@ -132,7 +132,7 @@ module.exports.interact = async (event, context, callback) => {
         );
 
         // Clear the current modal
-        callback(null, response);
+        // callback(null, response);
 
         // And now update the modal to show the search results
         await updateModal(
