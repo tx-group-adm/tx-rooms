@@ -126,7 +126,20 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
           {
             type: "mrkdwn",
             text:
-              "- *Tip #1:* Search for rooms with the slash command `/rooms` (or Shortcut) in any Slack channel. Example, to search for the Paris meeting room: `/rooms paris`.\n - *Tip #2* You can even search for partial room names.\n- Made with ❤️ by *Michael Wuergler* so he can stop getting lost at work. | <https://github.com/tamedia-pmd/tx-rooms/issues|Report a Problem>"
+              "- *Tip #1:* Search for rooms with the slash command `/rooms` (or Shortcut) in any Slack channel.\n - *Tip #2:* You can even search for partial room names.\n"
+          }
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        type: "context",
+        elements: [
+          {
+            type: "mrkdwn",
+            text:
+              "Made with ❤️ by *Michael Wuergler* so he can stop getting lost at work. | <https://github.com/tamedia-pmd/tx-rooms/issues|Report a Problem>"
           }
         ]
       }

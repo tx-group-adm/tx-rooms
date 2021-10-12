@@ -92,7 +92,7 @@ const generateFloorTextForBuildingCode = (rooms, buildingCode) => {
   }
 
   if (floorn1.length > 1) {
-    s += floor1.join("\n");
+    s += floorn1.join("\n");
     s += "\n\n";
   }
 
