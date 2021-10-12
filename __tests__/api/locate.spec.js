@@ -12,7 +12,7 @@ describe("api.locate", () => {
         };
 
         const actual = await locate(event);
-        expect(JSON.stringify(actual)).toContain("`Boston`");
+        expect(JSON.stringify(actual)).toContain("`Sitzungszimmer A5.1 Boston`");
     });
 
     test("returns the required payload", async () => {
