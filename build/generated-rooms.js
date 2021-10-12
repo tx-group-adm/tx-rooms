@@ -64,7 +64,7 @@ module.exports = [
     "slug": "vrsitzungszimmer"
   },
   {
-    "name": "Cinerent",
+    "name": "Nutzermarkt (Tappeiner)",
     "floor": "Floor 5",
     "code": "CH-WE-A",
     "address": "Ernst-Nobs-Platz 7",
@@ -72,7 +72,7 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
     "icon": ":tumbler_glass:",
     "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "cinerent"
+    "slug": "nutzermarkttappeiner"
   },
   {
     "name": "Olmero",
@@ -86,7 +86,7 @@ module.exports = [
     "slug": "olmero"
   },
   {
-    "name": "Starticket",
+    "name": "Doodle TX Group Ventures",
     "floor": "Floor 5",
     "code": "CH-WE-A",
     "address": "Ernst-Nobs-Platz 7",
@@ -94,10 +94,21 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
     "icon": ":tumbler_glass:",
     "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "starticket"
+    "slug": "doodletxgroupventures"
   },
   {
-    "name": "Boston",
+    "name": "Magazin Tamedia",
+    "floor": "Floor 5",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "magazintamedia"
+  },
+  {
+    "name": "Sitzungszimmer A5.1 Boston",
     "floor": "Floor 5",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/10016/spaces/54050",
     "code": "CH-WE-A",
@@ -106,10 +117,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
     "icon": ":tumbler_glass:",
     "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "boston"
+    "slug": "sitzungszimmera51boston"
   },
   {
-    "name": "Annabelle",
+    "name": "Corporate Services TX Group",
     "floor": "Floor 4",
     "code": "CH-WE-A",
     "address": "Ernst-Nobs-Platz 7",
@@ -117,29 +128,7 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
     "icon": ":tumbler_glass:",
     "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "annabelle"
-  },
-  {
-    "name": "Debitoren",
-    "floor": "Floor 4",
-    "code": "CH-WE-A",
-    "address": "Ernst-Nobs-Platz 7",
-    "nickname": "Glass Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
-    "icon": ":tumbler_glass:",
-    "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "debitoren"
-  },
-  {
-    "name": "Finanz und Wirtschaft Forum",
-    "floor": "Floor 4",
-    "code": "CH-WE-A",
-    "address": "Ernst-Nobs-Platz 7",
-    "nickname": "Glass Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
-    "icon": ":tumbler_glass:",
-    "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "finanzundwirtschaftforum"
+    "slug": "corporateservicestxgroup"
   },
   {
     "name": "Advertising: Nationale Medien",
@@ -153,7 +142,7 @@ module.exports = [
     "slug": "advertisingnationalemedien"
   },
   {
-    "name": "Schweizer Familie",
+    "name": "Corporate Services TX Group",
     "floor": "Floor 3",
     "code": "CH-WE-A",
     "address": "Ernst-Nobs-Platz 7",
@@ -161,10 +150,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
     "icon": ":tumbler_glass:",
     "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "schweizerfamilie"
+    "slug": "corporateservicestxgroup"
   },
   {
-    "name": "Chicago",
+    "name": "Sitzungszimmer A3.1 Chicago",
     "floor": "Floor 3",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/10016/spaces/54049",
     "code": "CH-WE-A",
@@ -173,10 +162,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
     "icon": ":tumbler_glass:",
     "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "chicago"
+    "slug": "sitzungszimmera31chicago"
   },
   {
-    "name": "Finanz und Wirtschaft",
+    "name": "TX Markets Leiung",
     "floor": "Floor 2",
     "code": "CH-WE-A",
     "address": "Ernst-Nobs-Platz 7",
@@ -184,7 +173,18 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
     "icon": ":tumbler_glass:",
     "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "finanzundwirtschaft"
+    "slug": "txmarketsleiung"
+  },
+  {
+    "name": "TX Group Technologies + Ventures",
+    "floor": "Floor 2",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "txgrouptechnologiesventures"
   },
   {
     "name": "Tutti",
@@ -198,7 +198,7 @@ module.exports = [
     "slug": "tutti"
   },
   {
-    "name": "New York",
+    "name": "Sitzungszimmer A2.1 New York",
     "floor": "Floor 2",
     "code": "CH-WE-A",
     "address": "Ernst-Nobs-Platz 7",
@@ -206,7 +206,7 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
     "icon": ":tumbler_glass:",
     "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "newyork"
+    "slug": "sitzungszimmera21newyork"
   },
   {
     "name": "Homegate",
@@ -220,7 +220,7 @@ module.exports = [
     "slug": "homegate"
   },
   {
-    "name": "Leitung Bereich Rubriken & Marketplätze",
+    "name": "Sitzungszimmer A1.1 San Francisco",
     "floor": "Floor 1",
     "code": "CH-WE-A",
     "address": "Ernst-Nobs-Platz 7",
@@ -228,40 +228,7 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
     "icon": ":tumbler_glass:",
     "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "leitungbereichrubrikenmarketplätze"
-  },
-  {
-    "name": "Leitung Bereich IT & Beteiligungen",
-    "floor": "Floor 1",
-    "code": "CH-WE-A",
-    "address": "Ernst-Nobs-Platz 7",
-    "nickname": "Glass Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
-    "icon": ":tumbler_glass:",
-    "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "leitungbereichitbeteiligungen"
-  },
-  {
-    "name": "Leitung Bereich Verlagsservices",
-    "floor": "Floor 1",
-    "code": "CH-WE-A",
-    "address": "Ernst-Nobs-Platz 7",
-    "nickname": "Glass Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
-    "icon": ":tumbler_glass:",
-    "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "leitungbereichverlagsservices"
-  },
-  {
-    "name": "San Francisco",
-    "floor": "Floor 1",
-    "code": "CH-WE-A",
-    "address": "Ernst-Nobs-Platz 7",
-    "nickname": "Glass Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
-    "icon": ":tumbler_glass:",
-    "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "sanfrancisco"
+    "slug": "sitzungszimmera11sanfrancisco"
   },
   {
     "name": "Informatik",
@@ -275,7 +242,7 @@ module.exports = [
     "slug": "informatik"
   },
   {
-    "name": "Marktforschung",
+    "name": "Finanz und Wirtschaft + Forum",
     "floor": "Floor 0",
     "code": "CH-WE-A",
     "address": "Ernst-Nobs-Platz 7",
@@ -283,10 +250,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
     "icon": ":tumbler_glass:",
     "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "marktforschung"
+    "slug": "finanzundwirtschaftforum"
   },
   {
-    "name": "Seattle",
+    "name": "Sitzungszimmer A0.1 Seattle",
     "floor": "Floor 0",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/10016/spaces/54047",
     "code": "CH-WE-A",
@@ -295,10 +262,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
     "icon": ":tumbler_glass:",
     "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "seattle"
+    "slug": "sitzungszimmera01seattle"
   },
   {
-    "name": "Ad Services",
+    "name": "Co Working Space",
     "floor": "Floor -1",
     "code": "CH-WE-A",
     "address": "Ernst-Nobs-Platz 7",
@@ -306,18 +273,7 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
     "icon": ":tumbler_glass:",
     "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "adservices"
-  },
-  {
-    "name": "Prepress",
-    "floor": "Floor -1",
-    "code": "CH-WE-A",
-    "address": "Ernst-Nobs-Platz 7",
-    "nickname": "Glass Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
-    "icon": ":tumbler_glass:",
-    "value": "ERNST_NOBS_PLATZ_7",
-    "slug": "prepress"
+    "slug": "coworkingspace"
   },
   {
     "name": "Konferenzzentrum / Atrium",
@@ -379,7 +335,7 @@ module.exports = [
     "slug": "immobilienmanagement"
   },
   {
-    "name": "Bellevue",
+    "name": "Sitzungszimmer E4.1 Bellevue",
     "floor": "Floor 4",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11698/spaces/54014",
     "code": "CH-WE-D",
@@ -388,7 +344,7 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
     "icon": ":postbox:",
     "value": "WERDSTRASSE_25",
-    "slug": "bellevue"
+    "slug": "sitzungszimmere41bellevue"
   },
   {
     "name": "Unternehmensentwicklung",
@@ -435,7 +391,7 @@ module.exports = [
     "slug": "verwalungsrat"
   },
   {
-    "name": "Einkauf",
+    "name": "Redaktion Tamedia DCH",
     "floor": "Floor 3",
     "code": "CH-WE-D",
     "address": "Werdstrasse 25",
@@ -443,21 +399,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
     "icon": ":postbox:",
     "value": "WERDSTRASSE_25",
-    "slug": "einkauf"
+    "slug": "redaktiontamediadch"
   },
   {
-    "name": "Human Resources",
-    "floor": "Floor 3",
-    "code": "CH-WE-D",
-    "address": "Werdstrasse 25",
-    "nickname": "The Werdino / Post Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
-    "icon": ":postbox:",
-    "value": "WERDSTRASSE_25",
-    "slug": "humanresources"
-  },
-  {
-    "name": "Advertising: Regionalmedien 2",
+    "name": "Tages-Anzeiger",
     "floor": "Floor 2",
     "code": "CH-WE-D",
     "address": "Werdstrasse 25",
@@ -465,43 +410,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
     "icon": ":postbox:",
     "value": "WERDSTRASSE_25",
-    "slug": "advertisingregionalmedien2"
+    "slug": "tagesanzeiger"
   },
   {
-    "name": "Advertising: Sales Support",
-    "floor": "Floor 2",
-    "code": "CH-WE-D",
-    "address": "Werdstrasse 25",
-    "nickname": "The Werdino / Post Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
-    "icon": ":postbox:",
-    "value": "WERDSTRASSE_25",
-    "slug": "advertisingsalessupport"
-  },
-  {
-    "name": "Tags-Anzeiger",
-    "floor": "Floor 2",
-    "code": "CH-WE-D",
-    "address": "Werdstrasse 25",
-    "nickname": "The Werdino / Post Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
-    "icon": ":postbox:",
-    "value": "WERDSTRASSE_25",
-    "slug": "tagsanzeiger"
-  },
-  {
-    "name": "Webvideo-Team",
-    "floor": "Floor 2",
-    "code": "CH-WE-D",
-    "address": "Werdstrasse 25",
-    "nickname": "The Werdino / Post Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
-    "icon": ":postbox:",
-    "value": "WERDSTRASSE_25",
-    "slug": "webvideoteam"
-  },
-  {
-    "name": "Advertising: Regionalmedien 1",
+    "name": "TES, Redaktion Tamedia",
     "floor": "Floor 1",
     "code": "CH-WE-D",
     "address": "Werdstrasse 25",
@@ -509,10 +421,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
     "icon": ":postbox:",
     "value": "WERDSTRASSE_25",
-    "slug": "advertisingregionalmedien1"
+    "slug": "tesredaktiontamedia"
   },
   {
-    "name": "Olmero Informatik",
+    "name": "Sonntagszeitung",
     "floor": "Floor 1",
     "code": "CH-WE-D",
     "address": "Werdstrasse 25",
@@ -520,7 +432,7 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
     "icon": ":postbox:",
     "value": "WERDSTRASSE_25",
-    "slug": "olmeroinformatik"
+    "slug": "sonntagszeitung"
   },
   {
     "name": "Informatik Schulung",
@@ -534,7 +446,7 @@ module.exports = [
     "slug": "informatikschulung"
   },
   {
-    "name": "Sitzungszimmer D 1 Kopenhagen",
+    "name": "Sitzungszimmer D1.13 Kopenhagen",
     "floor": "Floor 1",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54071",
     "code": "CH-WE-D",
@@ -543,10 +455,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
     "icon": ":postbox:",
     "value": "WERDSTRASSE_25",
-    "slug": "sitzungszimmerd1kopenhagen"
+    "slug": "sitzungszimmerd113kopenhagen"
   },
   {
-    "name": "Sitzungszimmer D 1 Oslo",
+    "name": "Sitzungszimmer D1.14 Oslo",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54072",
     "floor": "Floor 1",
     "code": "CH-WE-D",
@@ -555,10 +467,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
     "icon": ":postbox:",
     "value": "WERDSTRASSE_25",
-    "slug": "sitzungszimmerd1oslo"
+    "slug": "sitzungszimmerd114oslo"
   },
   {
-    "name": "Sitzungszimmer D 1 London",
+    "name": "Sitzungszimmer D1.11 London",
     "floor": "Floor 1",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54070",
     "code": "CH-WE-D",
@@ -567,10 +479,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
     "icon": ":postbox:",
     "value": "WERDSTRASSE_25",
-    "slug": "sitzungszimmerd1london"
+    "slug": "sitzungszimmerd111london"
   },
   {
-    "name": "Sitzungszimmer D 1 Luxemburg",
+    "name": "Sitzungszimmer D1.9 Luxemburg",
     "floor": "Floor 1",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54069",
     "code": "CH-WE-D",
@@ -579,10 +491,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
     "icon": ":postbox:",
     "value": "WERDSTRASSE_25",
-    "slug": "sitzungszimmerd1luxemburg"
+    "slug": "sitzungszimmerd19luxemburg"
   },
   {
-    "name": "Sitzungszimmer D 1 Paris",
+    "name": "Sitzungszimmer D1.7 Paris",
     "floor": "Floor 1",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54068",
     "code": "CH-WE-D",
@@ -591,10 +503,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
     "icon": ":postbox:",
     "value": "WERDSTRASSE_25",
-    "slug": "sitzungszimmerd1paris"
+    "slug": "sitzungszimmerd17paris"
   },
   {
-    "name": "Sitzungszimmer D 1 Rom",
+    "name": "Sitzungszimmer D.1 Rom",
     "floor": "Floor 1",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54066",
     "code": "CH-WE-D",
@@ -606,7 +518,7 @@ module.exports = [
     "slug": "sitzungszimmerd1rom"
   },
   {
-    "name": "Sitzungszimmer D 1 Athen",
+    "name": "Sitzungszimmer D1.1 Athen",
     "floor": "Floor 1",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54063",
     "code": "CH-WE-D",
@@ -615,10 +527,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
     "icon": ":postbox:",
     "value": "WERDSTRASSE_25",
-    "slug": "sitzungszimmerd1athen"
+    "slug": "sitzungszimmerd11athen"
   },
   {
-    "name": "Sitzungszimmer D 1 Madrid",
+    "name": "Sitzungszimmer D1.3 Madrid",
     "floor": "Floor 1",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54065",
     "code": "CH-WE-D",
@@ -627,10 +539,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
     "icon": ":postbox:",
     "value": "WERDSTRASSE_25",
-    "slug": "sitzungszimmerd1madrid"
+    "slug": "sitzungszimmerd13madrid"
   },
   {
-    "name": "Sitzungszimmer D 1 SchulungsraumInformatik",
+    "name": "Sitzungszimmer D.1 SchulungsraumInformatik",
     "floor": "Floor 1",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54064",
     "code": "CH-WE-D",
@@ -642,7 +554,7 @@ module.exports = [
     "slug": "sitzungszimmerd1schulungsrauminformatik"
   },
   {
-    "name": "Sitzungszimmer D 1 Berlin",
+    "name": "Sitzungszimmer D.1 Berlin",
     "floor": "Floor 1",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54067",
     "code": "CH-WE-D",
@@ -709,7 +621,7 @@ module.exports = [
     "slug": "personalrestaurantwerdino"
   },
   {
-    "name": "Advertising: 20 Minuten",
+    "name": "20 Minuten Redaktion",
     "floor": "Floor 5",
     "code": "CH-WE-C",
     "address": "Werdstrasse 21",
@@ -717,10 +629,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
     "icon": ":evergreen_tree:",
     "value": "WERDSTRASSE_21",
-    "slug": "advertising20minuten"
+    "slug": "20minutenredaktion"
   },
   {
-    "name": "20 Minuten",
+    "name": "20 Minuten Verlang",
     "floor": "Floor 5",
     "code": "CH-WE-C",
     "address": "Werdstrasse 21",
@@ -728,32 +640,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
     "icon": ":evergreen_tree:",
     "value": "WERDSTRASSE_21",
-    "slug": "20minuten"
+    "slug": "20minutenverlang"
   },
   {
-    "name": "20 Minuten Friday",
-    "floor": "Floor 5",
-    "code": "CH-WE-C",
-    "address": "Werdstrasse 21",
-    "nickname": "The Wood Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
-    "icon": ":evergreen_tree:",
-    "value": "WERDSTRASSE_21",
-    "slug": "20minutenfriday"
-  },
-  {
-    "name": "20 Minuten Tillate",
-    "floor": "Floor 5",
-    "code": "CH-WE-C",
-    "address": "Werdstrasse 21",
-    "nickname": "The Wood Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
-    "icon": ":evergreen_tree:",
-    "value": "WERDSTRASSE_21",
-    "slug": "20minutentillate"
-  },
-  {
-    "name": "Sitzungszimmer C 5.2 Seoul",
+    "name": "Sitzungszimmer C5.2 Seoul",
     "floor": "Floor 5",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54062",
     "code": "CH-WE-C",
@@ -765,7 +655,7 @@ module.exports = [
     "slug": "sitzungszimmerc52seoul"
   },
   {
-    "name": "Leitung Bereich Werdung & Pendlermedien",
+    "name": "20 Minuten Verlag",
     "floor": "Floor 4",
     "code": "CH-WE-C",
     "address": "Werdstrasse 21",
@@ -773,10 +663,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
     "icon": ":evergreen_tree:",
     "value": "WERDSTRASSE_21",
-    "slug": "leitungbereichwerdungpendlermedien"
+    "slug": "20minutenverlag"
   },
   {
-    "name": "20 Minuten (4th Floor)",
+    "name": "20 Minuten Advertising",
     "floor": "Floor 4",
     "code": "CH-WE-C",
     "address": "Werdstrasse 21",
@@ -784,10 +674,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
     "icon": ":evergreen_tree:",
     "value": "WERDSTRASSE_21",
-    "slug": "20minuten4thfloor"
+    "slug": "20minutenadvertising"
   },
   {
-    "name": "Advertising: 20 Minuten",
+    "name": "Goldbach neXT",
     "floor": "Floor 4",
     "code": "CH-WE-C",
     "address": "Werdstrasse 21",
@@ -795,54 +685,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
     "icon": ":evergreen_tree:",
     "value": "WERDSTRASSE_21",
-    "slug": "advertising20minuten"
+    "slug": "goldbachnext"
   },
   {
-    "name": "Advertising: Digital Advertising Sales",
-    "floor": "Floor 4",
-    "code": "CH-WE-C",
-    "address": "Werdstrasse 21",
-    "nickname": "The Wood Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
-    "icon": ":evergreen_tree:",
-    "value": "WERDSTRASSE_21",
-    "slug": "advertisingdigitaladvertisingsales"
-  },
-  {
-    "name": "Advertising: Digital Classified & Tamedia Network",
-    "floor": "Floor 4",
-    "code": "CH-WE-C",
-    "address": "Werdstrasse 21",
-    "nickname": "The Wood Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
-    "icon": ":evergreen_tree:",
-    "value": "WERDSTRASSE_21",
-    "slug": "advertisingdigitalclassifiedtamedianetwork"
-  },
-  {
-    "name": "Customer Contact Center",
-    "floor": "Floor 4",
-    "code": "CH-WE-C",
-    "address": "Werdstrasse 21",
-    "nickname": "The Wood Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
-    "icon": ":evergreen_tree:",
-    "value": "WERDSTRASSE_21",
-    "slug": "customercontactcenter"
-  },
-  {
-    "name": "Digital News & Development",
-    "floor": "Floor 4",
-    "code": "CH-WE-C",
-    "address": "Werdstrasse 21",
-    "nickname": "The Wood Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
-    "icon": ":evergreen_tree:",
-    "value": "WERDSTRASSE_21",
-    "slug": "digitalnewsdevelopment"
-  },
-  {
-    "name": "Sitzungszimmer C 4.1 Bangkok",
+    "name": "Sitzungszimmer C4.1 Bangkok",
     "floor": "Floor 4",
     "code": "CH-WE-C",
     "address": "Werdstrasse 21",
@@ -853,7 +699,7 @@ module.exports = [
     "slug": "sitzungszimmerc41bangkok"
   },
   {
-    "name": "Sitzungszimmer C 4.2 Kuala Lumpur",
+    "name": "Sitzungszimmer C4.2 Kuala Lumpur",
     "floor": "Floor 4",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54061",
     "code": "CH-WE-C",
@@ -865,7 +711,7 @@ module.exports = [
     "slug": "sitzungszimmerc42kualalumpur"
   },
   {
-    "name": "Leitung Bereich Bezahlmedien",
+    "name": "Goldbach Publishing",
     "floor": "Floor 3",
     "code": "CH-WE-C",
     "address": "Werdstrasse 21",
@@ -873,10 +719,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
     "icon": ":evergreen_tree:",
     "value": "WERDSTRASSE_21",
-    "slug": "leitungbereichbezahlmedien"
+    "slug": "goldbachpublishing"
   },
   {
-    "name": "Advertising: Nationale Medien",
+    "name": "Goldbach Audience",
     "floor": "Floor 3",
     "code": "CH-WE-C",
     "address": "Werdstrasse 21",
@@ -884,43 +730,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
     "icon": ":evergreen_tree:",
     "value": "WERDSTRASSE_21",
-    "slug": "advertisingnationalemedien"
+    "slug": "goldbachaudience"
   },
   {
-    "name": "Advertising: Nationale Medien",
-    "floor": "Floor 3",
-    "code": "CH-WE-C",
-    "address": "Werdstrasse 21",
-    "nickname": "The Wood Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
-    "icon": ":evergreen_tree:",
-    "value": "WERDSTRASSE_21",
-    "slug": "advertisingnationalemedien"
-  },
-  {
-    "name": "Nutzermarkt: Dialogmarketing",
-    "floor": "Floor 3",
-    "code": "CH-WE-C",
-    "address": "Werdstrasse 21",
-    "nickname": "The Wood Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
-    "icon": ":evergreen_tree:",
-    "value": "WERDSTRASSE_21",
-    "slug": "nutzermarktdialogmarketing"
-  },
-  {
-    "name": "Nutzermarkt: überregionale Medien Deutschweiz",
-    "floor": "Floor 3",
-    "code": "CH-WE-C",
-    "address": "Werdstrasse 21",
-    "nickname": "The Wood Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
-    "icon": ":evergreen_tree:",
-    "value": "WERDSTRASSE_21",
-    "slug": "nutzermarktüberregionalemediendeutschweiz"
-  },
-  {
-    "name": "Sitzungszimmer C 3.1 Mumbai",
+    "name": "Sitzungszimmer C3.1 Mumbai",
     "floor": "Floor 3",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54058",
     "code": "CH-WE-C",
@@ -932,7 +745,7 @@ module.exports = [
     "slug": "sitzungszimmerc31mumbai"
   },
   {
-    "name": "Sitzungszimmer C 3.2 Singapur",
+    "name": "Sitzungszimmer C3.2 Singapur",
     "floor": "Floor 3",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54059",
     "code": "CH-WE-C",
@@ -944,7 +757,7 @@ module.exports = [
     "slug": "sitzungszimmerc32singapur"
   },
   {
-    "name": "Tages-Anzeiger",
+    "name": "Redaktion Tamedia Newsroom",
     "floor": "Floor 2",
     "code": "CH-WE-C",
     "address": "Werdstrasse 21",
@@ -952,10 +765,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
     "icon": ":evergreen_tree:",
     "value": "WERDSTRASSE_21",
-    "slug": "tagesanzeiger"
+    "slug": "redaktiontamedianewsroom"
   },
   {
-    "name": "Tages-Anzeiger Newsroom",
+    "name": "Redaktion Tamedia Sport",
     "floor": "Floor 2",
     "code": "CH-WE-C",
     "address": "Werdstrasse 21",
@@ -963,10 +776,21 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
     "icon": ":evergreen_tree:",
     "value": "WERDSTRASSE_21",
-    "slug": "tagesanzeigernewsroom"
+    "slug": "redaktiontamediasport"
   },
   {
-    "name": "Sitzungszimmer C 2.1 Shanghai",
+    "name": "TES",
+    "floor": "Floor 2",
+    "code": "CH-WE-C",
+    "address": "Werdstrasse 21",
+    "nickname": "The Wood Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
+    "icon": ":evergreen_tree:",
+    "value": "WERDSTRASSE_21",
+    "slug": "tes"
+  },
+  {
+    "name": "Sitzungszimmer C2.1 Shanghai",
     "floor": "Floor 2",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54056",
     "code": "CH-WE-C",
@@ -978,7 +802,7 @@ module.exports = [
     "slug": "sitzungszimmerc21shanghai"
   },
   {
-    "name": "Sitzungszimmer C 2.3 Hongkong",
+    "name": "Sitzungszimmer C2.3 Hongkong",
     "floor": "Floor 2",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54057",
     "code": "CH-WE-C",
@@ -990,7 +814,7 @@ module.exports = [
     "slug": "sitzungszimmerc23hongkong"
   },
   {
-    "name": "Das Magazin",
+    "name": "Tamedia Product, Revenue und Technology",
     "floor": "Floor 1",
     "code": "CH-WE-C",
     "address": "Werdstrasse 21",
@@ -998,43 +822,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
     "icon": ":evergreen_tree:",
     "value": "WERDSTRASSE_21",
-    "slug": "dasmagazin"
+    "slug": "tamediaproductrevenueundtechnology"
   },
   {
-    "name": "Digital News & Development",
-    "floor": "Floor 1",
-    "code": "CH-WE-C",
-    "address": "Werdstrasse 21",
-    "nickname": "The Wood Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
-    "icon": ":evergreen_tree:",
-    "value": "WERDSTRASSE_21",
-    "slug": "digitalnewsdevelopment"
-  },
-  {
-    "name": "Tagblatt der Stadt Zürich",
-    "floor": "Floor 1",
-    "code": "CH-WE-C",
-    "address": "Werdstrasse 21",
-    "nickname": "The Wood Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
-    "icon": ":evergreen_tree:",
-    "value": "WERDSTRASSE_21",
-    "slug": "tagblattderstadtzürich"
-  },
-  {
-    "name": "Tages-Anzeiger",
-    "floor": "Floor 1",
-    "code": "CH-WE-C",
-    "address": "Werdstrasse 21",
-    "nickname": "The Wood Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
-    "icon": ":evergreen_tree:",
-    "value": "WERDSTRASSE_21",
-    "slug": "tagesanzeiger"
-  },
-  {
-    "name": "Sitzungszimmer C 1.1 Tokyo",
+    "name": "Sitzungszimmer C1.1 Tokyo",
     "floor": "Floor 1",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54054",
     "code": "CH-WE-C",
@@ -1046,7 +837,7 @@ module.exports = [
     "slug": "sitzungszimmerc11tokyo"
   },
   {
-    "name": "Sitzungszimmer C 1.2 Beijing",
+    "name": "Sitzungszimmer C1.2 Beijing",
     "floor": "Floor 1",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54055",
     "code": "CH-WE-C",
@@ -1069,17 +860,6 @@ module.exports = [
     "slug": "zwischengeschoss"
   },
   {
-    "name": "Haupteingang",
-    "floor": "Floor 0",
-    "code": "CH-WE-C",
-    "address": "Werdstrasse 21",
-    "nickname": "The Wood Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
-    "icon": ":evergreen_tree:",
-    "value": "WERDSTRASSE_21",
-    "slug": "haupteingang"
-  },
-  {
     "name": "Empfang",
     "floor": "Floor 0",
     "code": "CH-WE-C",
@@ -1091,7 +871,7 @@ module.exports = [
     "slug": "empfang"
   },
   {
-    "name": "Inseratenannahme",
+    "name": "Veranstaltungsraum",
     "floor": "Floor 0",
     "code": "CH-WE-C",
     "address": "Werdstrasse 21",
@@ -1099,21 +879,10 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
     "icon": ":evergreen_tree:",
     "value": "WERDSTRASSE_21",
-    "slug": "inseratenannahme"
+    "slug": "veranstaltungsraum"
   },
   {
-    "name": "Personalrestaurant Werdino (Erweiterung)",
-    "floor": "Floor 0",
-    "code": "CH-WE-C",
-    "address": "Werdstrasse 21",
-    "nickname": "The Wood Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
-    "icon": ":evergreen_tree:",
-    "value": "WERDSTRASSE_21",
-    "slug": "personalrestaurantwerdinoerweiterung"
-  },
-  {
-    "name": "20 Minuten Newsroom",
+    "name": "20 Minuten Redaktion",
     "floor": "Floor 5",
     "code": "CH-WE-B",
     "address": "Stauffacherquai 8",
@@ -1121,10 +890,21 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
     "icon": ":classical_building:",
     "value": "STAUFFACHERQUAI_8",
-    "slug": "20minutennewsroom"
+    "slug": "20minutenredaktion"
   },
   {
-    "name": "Finanz und Rechnungswesen",
+    "name": "20 Minuten Videostudio",
+    "floor": "Floor 5",
+    "code": "CH-WE-B",
+    "address": "Stauffacherquai 8",
+    "nickname": "The Classic Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
+    "icon": ":classical_building:",
+    "value": "STAUFFACHERQUAI_8",
+    "slug": "20minutenvideostudio"
+  },
+  {
+    "name": "Finanzen",
     "floor": "Floor 4",
     "code": "CH-WE-B",
     "address": "Stauffacherquai 8",
@@ -1132,7 +912,7 @@ module.exports = [
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
     "icon": ":classical_building:",
     "value": "STAUFFACHERQUAI_8",
-    "slug": "finanzundrechnungswesen"
+    "slug": "finanzen"
   },
   {
     "name": "Controlling",
@@ -1146,18 +926,7 @@ module.exports = [
     "slug": "controlling"
   },
   {
-    "name": "Leitung Bereich Finanzen & Personal",
-    "floor": "Floor 4",
-    "code": "CH-WE-B",
-    "address": "Stauffacherquai 8",
-    "nickname": "The Classic Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
-    "icon": ":classical_building:",
-    "value": "STAUFFACHERQUAI_8",
-    "slug": "leitungbereichfinanzenpersonal"
-  },
-  {
-    "name": "Sitzungszimmer B 4.1 Lausanne",
+    "name": "Sitzungszimmer B4.1 Lausanne",
     "floor": "Floor 4",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11699/spaces/54052",
     "code": "CH-WE-B",
@@ -1169,7 +938,7 @@ module.exports = [
     "slug": "sitzungszimmerb41lausanne"
   },
   {
-    "name": "Sitzungszimmer B 4.2 Genf",
+    "name": "Sitzungszimmer B4.2 Genf",
     "floor": "Floor 4",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11699/spaces/54053",
     "code": "CH-WE-B",
@@ -1181,103 +950,36 @@ module.exports = [
     "slug": "sitzungszimmerb42genf"
   },
   {
-    "name": "Tages-Anzeiger",
-    "floor": "Floor 3",
+    "name": "Sitzungszimmer B4.3",
+    "floor": "Floor 4",
     "code": "CH-WE-B",
     "address": "Stauffacherquai 8",
     "nickname": "The Classic Building",
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
     "icon": ":classical_building:",
     "value": "STAUFFACHERQUAI_8",
-    "slug": "tagesanzeiger"
+    "slug": "sitzungszimmerb43"
   },
   {
-    "name": "SonntagsZeitung",
-    "floor": "Floor 2",
+    "name": "Sitzungszimmer B4.4",
+    "floor": "Floor 4",
     "code": "CH-WE-B",
     "address": "Stauffacherquai 8",
     "nickname": "The Classic Building",
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
     "icon": ":classical_building:",
     "value": "STAUFFACHERQUAI_8",
-    "slug": "sonntagszeitung"
+    "slug": "sitzungszimmerb44"
   },
   {
-    "name": "Tages-Anzeiger",
-    "floor": "Floor 2",
+    "name": "Sitzungszimmer Gilbert",
+    "floor": "Floor 4",
     "code": "CH-WE-B",
     "address": "Stauffacherquai 8",
     "nickname": "The Classic Building",
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
     "icon": ":classical_building:",
     "value": "STAUFFACHERQUAI_8",
-    "slug": "tagesanzeiger"
-  },
-  {
-    "name": "Encore",
-    "floor": "Floor 1",
-    "code": "CH-WE-B",
-    "address": "Stauffacherquai 8",
-    "nickname": "The Classic Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
-    "icon": ":classical_building:",
-    "value": "STAUFFACHERQUAI_8",
-    "slug": "encore"
-  },
-  {
-    "name": "SonntagsZeitung",
-    "floor": "Floor 1",
-    "code": "CH-WE-B",
-    "address": "Stauffacherquai 8",
-    "nickname": "The Classic Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
-    "icon": ":classical_building:",
-    "value": "STAUFFACHERQUAI_8",
-    "slug": "sonntagszeitung"
-  },
-  {
-    "name": "Tages-Anzeiger",
-    "floor": "Floor 1",
-    "code": "CH-WE-B",
-    "address": "Stauffacherquai 8",
-    "nickname": "The Classic Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
-    "icon": ":classical_building:",
-    "value": "STAUFFACHERQUAI_8",
-    "slug": "tagesanzeiger"
-  },
-  {
-    "name": "Sitzungszimmer B 1.1 Bern",
-    "floor": "Floor 1",
-    "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11698/spaces/54051",
-    "code": "CH-WE-B",
-    "address": "Stauffacherquai 8",
-    "nickname": "The Classic Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
-    "icon": ":classical_building:",
-    "value": "STAUFFACHERQUAI_8",
-    "slug": "sitzungszimmerb11bern"
-  },
-  {
-    "name": "Doodle",
-    "floor": "Floor 0",
-    "code": "CH-WE-B",
-    "address": "Stauffacherquai 8",
-    "nickname": "The Classic Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
-    "icon": ":classical_building:",
-    "value": "STAUFFACHERQUAI_8",
-    "slug": "doodle"
-  },
-  {
-    "name": "Annabelle Studio",
-    "floor": "Floor 0",
-    "code": "CH-WE-B",
-    "address": "Stauffacherquai 8",
-    "nickname": "The Classic Building",
-    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
-    "icon": ":classical_building:",
-    "value": "STAUFFACHERQUAI_8",
-    "slug": "annabellestudio"
+    "slug": "sitzungszimmergilbert"
   }
 ]
