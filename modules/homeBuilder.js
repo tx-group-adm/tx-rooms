@@ -121,11 +121,14 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
         "type": "divider"
       },
       {
-        "type": "section",
-        "text": {
-          "type": "mrkdwn",
-          "text": "> :bulb: *Tip:* Use the slash command `/rooms` (or the TX Rooms Shortcut menu) in any Slack channel to find a meeting room. For example, to search for the Paris meeting room: `/rooms paris`. You can even search for partial room names."
-        }
+        type: "context",
+        elements: [
+          {
+            type: "mrkdwn",
+            text:
+              "- *Tip #1:* Search for rooms with the slash command `/rooms` (or Shortcut) in any Slack channel.\n - *Tip #2:* You can even search for partial room names.\n"
+          }
+        ]
       },
       {
         "type": "divider"
@@ -136,7 +139,7 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
           {
             type: "mrkdwn",
             text:
-              "\nMade with ❤️ by *Michael Wuergler* so he can stop getting lost at work.\n<https://github.com/tamedia-pmd/tx-rooms/issues|Report a Problem>"
+              "Made with ❤️ by *Michael Wuergler* so he can stop getting lost at work. | <https://github.com/tamedia-pmd/tx-rooms/issues|Report a Problem>"
           }
         ]
       }
