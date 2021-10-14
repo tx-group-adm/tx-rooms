@@ -83,7 +83,7 @@ const ERNST_NOBS_PLATZ_7 = [
 
   // 5th Floor
   {
-    name: "Cinerent",
+    name: "Nutzermarkt (Tappeiner)",
     floor: FLOORS.FIVE,
     ...buildings.ERNST_NOBS_PLATZ_7
   },
@@ -93,12 +93,17 @@ const ERNST_NOBS_PLATZ_7 = [
     ...buildings.ERNST_NOBS_PLATZ_7
   },
   {
-    name: "Starticket",
+    name: "Doodle TX Group Ventures",
     floor: FLOORS.FIVE,
     ...buildings.ERNST_NOBS_PLATZ_7
   },
   {
-    name: "Boston",
+    name: "Magazin Tamedia",
+    floor: FLOORS.FIVE,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
+  {
+    name: "Sitzungszimmer A5.1 Boston",
     floor: FLOORS.FIVE,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/10016/spaces/54050',
     ...buildings.ERNST_NOBS_PLATZ_7
@@ -106,17 +111,7 @@ const ERNST_NOBS_PLATZ_7 = [
 
   // 4th Floor
   {
-    name: "Annabelle",
-    floor: FLOORS.FOUR,
-    ...buildings.ERNST_NOBS_PLATZ_7
-  },
-  {
-    name: "Debitoren",
-    floor: FLOORS.FOUR,
-    ...buildings.ERNST_NOBS_PLATZ_7
-  },
-  {
-    name: "Finanz und Wirtschaft Forum",
+    name: "Corporate Services TX Group",
     floor: FLOORS.FOUR,
     ...buildings.ERNST_NOBS_PLATZ_7
   },
@@ -128,30 +123,35 @@ const ERNST_NOBS_PLATZ_7 = [
     ...buildings.ERNST_NOBS_PLATZ_7
   },
   {
-    name: "Schweizer Familie",
+    name: "Corporate Services TX Group",
     floor: FLOORS.THREE,
     ...buildings.ERNST_NOBS_PLATZ_7
   },
   {
-    name: "Chicago",
+    name: "Sitzungszimmer A3.1 Chicago",
     floor: FLOORS.THREE,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/10016/spaces/54049',
     ...buildings.ERNST_NOBS_PLATZ_7
   },
+
+  // 2nd Floor
   {
-    name: "Finanz und Wirtschaft",
+    name: "TX Markets Leiung",
     floor: FLOORS.TWO,
     ...buildings.ERNST_NOBS_PLATZ_7
   },
-
-  // 2nd Floor
+  {
+    name: "TX Group Technologies + Ventures",
+    floor: FLOORS.TWO,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
   {
     name: "Tutti",
     floor: FLOORS.TWO,
     ...buildings.ERNST_NOBS_PLATZ_7
   },
   {
-    name: "New York",
+    name: "Sitzungszimmer A2.1 New York",
     floor: FLOORS.TWO,
     ...buildings.ERNST_NOBS_PLATZ_7
   },
@@ -163,24 +163,9 @@ const ERNST_NOBS_PLATZ_7 = [
     ...buildings.ERNST_NOBS_PLATZ_7
   },
   {
-    name: "Leitung Bereich Rubriken & Marketplätze",
+    name: "Sitzungszimmer A1.1 San Francisco",
     floor: FLOORS.ONE,
-    ...buildings.ERNST_NOBS_PLATZ_7
-  },
-  {
-    name: "Leitung Bereich IT & Beteiligungen",
-    floor: FLOORS.ONE,
-    ...buildings.ERNST_NOBS_PLATZ_7
-  },
-  {
-    name: "Leitung Bereich Verlagsservices",
-    floor: FLOORS.ONE,
-    ...buildings.ERNST_NOBS_PLATZ_7
-  },
-  {
-    name: "San Francisco",
-    floor: FLOORS.ONE,
-    ...buildings.ERNST_NOBS_PLATZ_7
+    ...buildings.ERNST_NOBS_PLATZ_7,
   },
 
   // 0th Floor
@@ -190,12 +175,12 @@ const ERNST_NOBS_PLATZ_7 = [
     ...buildings.ERNST_NOBS_PLATZ_7
   },
   {
-    name: "Marktforschung",
+    name: "Finanz und Wirtschaft + Forum",
     floor: FLOORS.ZERO,
     ...buildings.ERNST_NOBS_PLATZ_7
   },
   {
-    name: "Seattle",
+    name: "Sitzungszimmer A0.1 Seattle",
     floor: FLOORS.ZERO,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/10016/spaces/54047',
     ...buildings.ERNST_NOBS_PLATZ_7
@@ -203,12 +188,7 @@ const ERNST_NOBS_PLATZ_7 = [
 
   // Floor -1
   {
-    name: "Ad Services",
-    floor: FLOORS.NEGATIVE1,
-    ...buildings.ERNST_NOBS_PLATZ_7
-  },
-  {
-    name: "Prepress",
+    name: "Co Working Space",
     floor: FLOORS.NEGATIVE1,
     ...buildings.ERNST_NOBS_PLATZ_7
   },
@@ -245,13 +225,16 @@ const ERNST_NOBS_PLATZ_7 = [
  * later when we build the home tab. 
  */
 const WERDSTRASSE_25 = [
+  // 5th Floor
   {
     name: "Immobilien-Management",
     floor: FLOORS.FIVE,
     ...buildings.WERDSTRASSE_25
   },
+
+  // 4th Floor
   {
-    name: 'Bellevue',
+    name: 'Sitzungszimmer E4.1 Bellevue',
     floor: FLOORS.FOUR,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11698/spaces/54014',
     ...buildings.WERDSTRASSE_25
@@ -275,122 +258,110 @@ const WERDSTRASSE_25 = [
     name: "Verwalungsrat",
     floor: FLOORS.FOUR,
     ...buildings.WERDSTRASSE_25
-  },
+  }, 
+
+  // 3rd Floor
   {
-    name: "Einkauf",
+    name: "Redaktion Tamedia DCH",
     floor: FLOORS.THREE,
     ...buildings.WERDSTRASSE_25
   },
+
+  // 2nd Floor
   {
-    name: "Human Resources",
-    floor: FLOORS.THREE,
-    ...buildings.WERDSTRASSE_25
-  },
-  {
-    name: "Advertising: Regionalmedien 2",
+    name: "Tages-Anzeiger",
     floor: FLOORS.TWO,
     ...buildings.WERDSTRASSE_25
   },
+
+  // 1st Floor
   {
-    name: "Advertising: Sales Support",
-    floor: FLOORS.TWO,
-    ...buildings.WERDSTRASSE_25
-  },
-  {
-    name: "Tags-Anzeiger",
-    floor: FLOORS.TWO,
-    ...buildings.WERDSTRASSE_25
-  },
-  {
-    name: "Webvideo-Team",
-    floor: FLOORS.TWO,
-    ...buildings.WERDSTRASSE_25
-  },
-  {
-    name: "Advertising: Regionalmedien 1",
+    name: "TES, Redaktion Tamedia",
     floor: FLOORS.ONE,
     ...buildings.WERDSTRASSE_25
   },
   {
-    name: "Olmero Informatik",
+    name: "Sonntagszeitung",
     floor: FLOORS.ONE,
     ...buildings.WERDSTRASSE_25
-  },
+  }, 
   {
     name: "Informatik Schulung",
     floor: FLOORS.ONE,
     ...buildings.WERDSTRASSE_25
   },
   {
-    name: "Sitzungszimmer D 1 Kopenhagen",
+    name: "Sitzungszimmer D1.13 Kopenhagen",
     floor: FLOORS.ONE,
     robinLink:
       "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54071",
     ...buildings.WERDSTRASSE_25
   },
   {
-    name: "Sitzungszimmer D 1 Oslo",
+    name: "Sitzungszimmer D1.14 Oslo",
     robinLink:
       "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54072",
     floor: FLOORS.ONE,
     ...buildings.WERDSTRASSE_25
   },
   {
-    name: "Sitzungszimmer D 1 London",
+    name: "Sitzungszimmer D1.11 London",
     floor: FLOORS.ONE,
     robinLink:
       "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54070",
     ...buildings.WERDSTRASSE_25
   },
   {
-    name: "Sitzungszimmer D 1 Luxemburg",
+    name: "Sitzungszimmer D1.9 Luxemburg",
     floor: FLOORS.ONE,
     robinLink:
       "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54069",
     ...buildings.WERDSTRASSE_25
   },
   {
-    name: "Sitzungszimmer D 1 Paris",
+    name: "Sitzungszimmer D1.7 Paris",
     floor: FLOORS.ONE,
     robinLink:
       "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54068",
     ...buildings.WERDSTRASSE_25
   },
   {
-    name: "Sitzungszimmer D 1 Rom",
+    name: "Sitzungszimmer D.1 Rom",
     floor: FLOORS.ONE,
     robinLink:
       "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54066",
     ...buildings.WERDSTRASSE_25
   },
   {
-    name: "Sitzungszimmer D 1 Athen",
+    name: "Sitzungszimmer D1.1 Athen",
     floor: FLOORS.ONE,
     robinLink:
       "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54063",
     ...buildings.WERDSTRASSE_25
   },
   {
-    name: "Sitzungszimmer D 1 Madrid",
+    name: "Sitzungszimmer D1.3 Madrid",
     floor: FLOORS.ONE,
     robinLink:
       "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54065",
     ...buildings.WERDSTRASSE_25
   },
   {
-    name: "Sitzungszimmer D 1 SchulungsraumInformatik",
+    name: "Sitzungszimmer D.1 SchulungsraumInformatik",
     floor: FLOORS.ONE,
     robinLink:
       "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54064",
     ...buildings.WERDSTRASSE_25
   },
   {
-    name: "Sitzungszimmer D 1 Berlin",
+    name: "Sitzungszimmer D.1 Berlin",
     floor: FLOORS.ONE,
     robinLink:
       "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54067",
     ...buildings.WERDSTRASSE_25
   },
+
+  // Z Floor
   {
     name: "Hausdienst (Bouygues)",
     floor: FLOORS.Z,
@@ -406,6 +377,8 @@ const WERDSTRASSE_25 = [
     floor: FLOORS.Z,
     ...buildings.WERDSTRASSE_25
   },
+
+  // 0th Floor
   {
     name: "Hauspost",
     floor: FLOORS.ZERO,
@@ -426,193 +399,140 @@ const WERDSTRASSE_25 = [
  */
 const WERDSTRASSE_21 = [
   {
-    name: "Advertising: 20 Minuten",
+    name: "20 Minuten Redaktion",
     floor: FLOORS.FIVE,
     ...buildings.WERDSTRASSE_21
   },
   {
-    name: "20 Minuten",
+    name: "20 Minuten Verlang",
     floor: FLOORS.FIVE,
     ...buildings.WERDSTRASSE_21
   },
   {
-    name: "20 Minuten Friday",
-    floor: FLOORS.FIVE,
-    ...buildings.WERDSTRASSE_21
-  },
-  {
-    name: "20 Minuten Tillate",
-    floor: FLOORS.FIVE,
-    ...buildings.WERDSTRASSE_21
-  },
-  {
-    name: "Sitzungszimmer C 5.2 Seoul",
+    name: "Sitzungszimmer C5.2 Seoul",
     floor: FLOORS.FIVE,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54062',
     ...buildings.WERDSTRASSE_21
   },
+  
+  // 4th Floor
   {
-    name: "Leitung Bereich Werdung & Pendlermedien",
+    name: "20 Minuten Verlag",
     floor: FLOORS.FOUR,
     ...buildings.WERDSTRASSE_21
   },
   {
-    name: "20 Minuten (4th Floor)",
+    name: "20 Minuten Advertising",
     floor: FLOORS.FOUR,
     ...buildings.WERDSTRASSE_21
   },
   {
-    name: "Advertising: 20 Minuten",
+    name: "Goldbach neXT",
     floor: FLOORS.FOUR,
     ...buildings.WERDSTRASSE_21
   },
   {
-    name: "Advertising: Digital Advertising Sales",
+    name: "Sitzungszimmer C4.1 Bangkok",
     floor: FLOORS.FOUR,
     ...buildings.WERDSTRASSE_21
   },
   {
-    name: "Advertising: Digital Classified & Tamedia Network",
-    floor: FLOORS.FOUR,
-    ...buildings.WERDSTRASSE_21
-  },
-  {
-    name: "Customer Contact Center",
-    floor: FLOORS.FOUR,
-    ...buildings.WERDSTRASSE_21
-  },
-  {
-    name: "Digital News & Development",
-    floor: FLOORS.FOUR,
-    ...buildings.WERDSTRASSE_21
-  },
-  {
-    name: "Sitzungszimmer C 4.1 Bangkok",
-    floor: FLOORS.FOUR,
-    ...buildings.WERDSTRASSE_21
-  },
-  {
-    name: "Sitzungszimmer C 4.2 Kuala Lumpur",
+    name: "Sitzungszimmer C4.2 Kuala Lumpur",
     floor: FLOORS.FOUR,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54061',
     ...buildings.WERDSTRASSE_21
   },
+
+  // 3rd Floor
   {
-    name: "Leitung Bereich Bezahlmedien",
+    name: "Goldbach Publishing",
     floor: FLOORS.THREE,
     ...buildings.WERDSTRASSE_21
   },
   {
-    name: "Advertising: Nationale Medien",
+    name: "Goldbach Audience",
     floor: FLOORS.THREE,
     ...buildings.WERDSTRASSE_21
   },
   {
-    name: "Advertising: Nationale Medien",
-    floor: FLOORS.THREE,
-    ...buildings.WERDSTRASSE_21
-  },
-  {
-    name: "Nutzermarkt: Dialogmarketing",
-    floor: FLOORS.THREE,
-    ...buildings.WERDSTRASSE_21
-  },
-  {
-    name: "Nutzermarkt: überregionale Medien Deutschweiz",
-    floor: FLOORS.THREE,
-    ...buildings.WERDSTRASSE_21
-  },
-  {
-    name: "Sitzungszimmer C 3.1 Mumbai",
+    name: "Sitzungszimmer C3.1 Mumbai",
     floor: FLOORS.THREE,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54058',
     ...buildings.WERDSTRASSE_21
   },
   {
-    name: "Sitzungszimmer C 3.2 Singapur",
+    name: "Sitzungszimmer C3.2 Singapur",
     floor: FLOORS.THREE,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54059',
     ...buildings.WERDSTRASSE_21
   },
+
+  // 2nd Floor
   {
-    name: "Tages-Anzeiger",
+    name: "Redaktion Tamedia Newsroom",
     floor: FLOORS.TWO,
     ...buildings.WERDSTRASSE_21
   },
   {
-    name: "Tages-Anzeiger Newsroom",
+    name: "Redaktion Tamedia Sport",
     floor: FLOORS.TWO,
     ...buildings.WERDSTRASSE_21
   },
   {
-    name: "Sitzungszimmer C 2.1 Shanghai",
+    name: "TES",
+    floor: FLOORS.TWO,
+    ...buildings.WERDSTRASSE_21
+  },
+  {
+    name: "Sitzungszimmer C2.1 Shanghai",
     floor: FLOORS.TWO,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54056',
     ...buildings.WERDSTRASSE_21
   },
   {
-    name: "Sitzungszimmer C 2.3 Hongkong",
+    name: "Sitzungszimmer C2.3 Hongkong",
     floor: FLOORS.TWO,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54057',
     ...buildings.WERDSTRASSE_21
   },
+
+  // 1st Floor
   {
-    name: "Das Magazin",
+    name: "Tamedia Product, Revenue und Technology",
     floor: FLOORS.ONE,
     ...buildings.WERDSTRASSE_21
   },
   {
-    name: "Digital News & Development",
-    floor: FLOORS.ONE,
-    ...buildings.WERDSTRASSE_21
-  },
-  {
-    name: "Tagblatt der Stadt Zürich",
-    floor: FLOORS.ONE,
-    ...buildings.WERDSTRASSE_21
-  },
-  {
-    name: "Tages-Anzeiger",
-    floor: FLOORS.ONE,
-    ...buildings.WERDSTRASSE_21
-  },
-  {
-    name: "Sitzungszimmer C 1.1 Tokyo",
+    name: "Sitzungszimmer C1.1 Tokyo",
     floor: FLOORS.ONE,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54054',
     ...buildings.WERDSTRASSE_21
   },
   {
-    name: "Sitzungszimmer C 1.2 Beijing",
+    name: "Sitzungszimmer C1.2 Beijing",
     floor: FLOORS.ONE,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54055',
     ...buildings.WERDSTRASSE_21
   },
+
+  // Z Floor
   {
     name: "Zwischengeschoss",
     floor: FLOORS.Z,
     ...buildings.WERDSTRASSE_21
   },
-  {
-    name: "Haupteingang",
-    floor: FLOORS.ZERO,
-    ...buildings.WERDSTRASSE_21
-  },
+
+  // Oth Floor
   {
     name: "Empfang",
     floor: FLOORS.ZERO,
     ...buildings.WERDSTRASSE_21
   },
   {
-    name: "Inseratenannahme",
+    name: "Veranstaltungsraum",
     floor: FLOORS.ZERO,
     ...buildings.WERDSTRASSE_21
   },
-  {
-    name: "Personalrestaurant Werdino (Erweiterung)",
-    floor: FLOORS.ZERO,
-    ...buildings.WERDSTRASSE_21
-  }
 ];
 
 /**
@@ -623,12 +543,17 @@ const WERDSTRASSE_21 = [
  */
 const STAUFFACHERQUAI_8 = [
   {
-    name: "20 Minuten Newsroom",
+    name: "20 Minuten Redaktion",
     floor: FLOORS.FIVE,
     ...buildings.STAUFFACHERQUAI_8
   },
   {
-    name: "Finanz und Rechnungswesen",
+    name: "20 Minuten Videostudio",
+    floor: FLOORS.FIVE,
+    ...buildings.STAUFFACHERQUAI_8
+  },
+  {
+    name: "Finanzen",
     floor: FLOORS.FOUR,
     ...buildings.STAUFFACHERQUAI_8
   },
@@ -638,68 +563,32 @@ const STAUFFACHERQUAI_8 = [
     ...buildings.STAUFFACHERQUAI_8
   },
   {
-    name: "Leitung Bereich Finanzen & Personal",
-    floor: FLOORS.FOUR,
-    ...buildings.STAUFFACHERQUAI_8
-  },
-  {
-    name: "Sitzungszimmer B 4.1 Lausanne",
+    name: "Sitzungszimmer B4.1 Lausanne",
     floor: FLOORS.FOUR,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11699/spaces/54052',
     ...buildings.STAUFFACHERQUAI_8
   },
   {
-    name: "Sitzungszimmer B 4.2 Genf",
+    name: "Sitzungszimmer B4.2 Genf",
     floor: FLOORS.FOUR,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11699/spaces/54053',
     ...buildings.STAUFFACHERQUAI_8
   },
   {
-    name: "Tages-Anzeiger",
-    floor: FLOORS.THREE,
+    name: "Sitzungszimmer B4.3",
+    floor: FLOORS.FOUR,
+    ...buildings.STAUFFACHERQUAI_8
+  }, 
+  {
+    name: "Sitzungszimmer B4.4",
+    floor: FLOORS.FOUR,
     ...buildings.STAUFFACHERQUAI_8
   },
   {
-    name: "SonntagsZeitung",
-    floor: FLOORS.TWO,
+    name: "Sitzungszimmer Gilbert",
+    floor: FLOORS.FOUR,
     ...buildings.STAUFFACHERQUAI_8
   },
-  {
-    name: "Tages-Anzeiger",
-    floor: FLOORS.TWO,
-    ...buildings.STAUFFACHERQUAI_8
-  },
-  {
-    name: "Encore",
-    floor: FLOORS.ONE,
-    ...buildings.STAUFFACHERQUAI_8
-  },
-  {
-    name: "SonntagsZeitung",
-    floor: FLOORS.ONE,
-    ...buildings.STAUFFACHERQUAI_8
-  },
-  {
-    name: "Tages-Anzeiger",
-    floor: FLOORS.ONE,
-    ...buildings.STAUFFACHERQUAI_8
-  },
-  {
-    name: "Sitzungszimmer B 1.1 Bern",
-    floor: FLOORS.ONE,
-    robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11698/spaces/54051',
-    ...buildings.STAUFFACHERQUAI_8
-  },
-  {
-    name: "Doodle",
-    floor: FLOORS.ZERO,
-    ...buildings.STAUFFACHERQUAI_8
-  },
-  {
-    name: "Annabelle Studio",
-    floor: FLOORS.ZERO,
-    ...buildings.STAUFFACHERQUAI_8
-  }
 ];
 
 const rooms = [

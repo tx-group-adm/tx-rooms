@@ -50,33 +50,34 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
   return {
     type: "home",
     blocks: [
-      {
-        type: "section",
-        text: {
-          type: "mrkdwn",
-          text:
-            "Click the button below to *search for a room* by name (or partial name)"
-        }
-      },
-      {
-        type: "actions",
-        block_id: SEARCH_ROOMS_BUTTON,
-        elements: [
-          {
-            type: "button",
-            style: "primary",
-            text: {
-              type: "plain_text",
-              text: ":mag_right: Search for room",
-              emoji: true
-            },
-            value: SEARCH_ROOMS_BUTTON
-          }
-        ]
-      },
-      {
-        type: "divider"
-      },
+      // FIXME: The SEARCH_ROOMS_BUTTON is not updating with search results.
+      // {
+      //   type: "section",
+      //   text: {
+      //     type: "mrkdwn",
+      //     text:
+      //       "Click the button below to *search for a room* by name (or partial name)"
+      //   }
+      // },
+      // {
+      //   type: "actions",
+      //   block_id: SEARCH_ROOMS_BUTTON,
+      //   elements: [
+      //     {
+      //       type: "button",
+      //       style: "primary",
+      //       text: {
+      //         type: "plain_text",
+      //         text: ":mag_right: Search for room",
+      //         emoji: true
+      //       },
+      //       value: SEARCH_ROOMS_BUTTON
+      //     }
+      //   ]
+      // },
+      // {
+      //   type: "divider"
+      // },
       {
         type: "section",
         text: {
@@ -117,14 +118,7 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
         }
       },
       {
-        type: "section",
-        text: {
-          type: "mrkdwn",
-          text: "\n\n "
-        }
-      },
-      {
-        type: "divider"
+        "type": "divider"
       },
       {
         type: "context",
@@ -132,7 +126,20 @@ const homeBuilder = (buildingObj = buildings.STAUFFACHERQUAI_8) => {
           {
             type: "mrkdwn",
             text:
-              "\nMade with ❤️ by *Michael Wuergler* so he can stop getting lost at work.\n<https://github.com/tamediadigital/tx-rooms/issues|Report a Problem>"
+              "- *Tip #1:* Search for rooms with the slash command `/rooms` (or Shortcut) in any Slack channel.\n - *Tip #2:* You can even search for partial room names.\n"
+          }
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        type: "context",
+        elements: [
+          {
+            type: "mrkdwn",
+            text:
+              "Made with ❤️ by *Michael Wuergler* so he can stop getting lost at work. | <https://github.com/tamedia-pmd/tx-rooms/issues|Report a Problem>"
           }
         ]
       }

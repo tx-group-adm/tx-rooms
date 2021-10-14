@@ -1,0 +1,116 @@
+version: 2.1
+
+jobs:
+    build:
+        docker:
+            # circleci node image version
+            - image: circleci/node:12
+
+        steps:
+            - checkout
+            - restore_cache:
+                  keys:
+                      - v1-dependencies-{{ checksum "package-lock.json" }}
+
+            - run:
+                  name: Install Dependencies
+                  command: npm install
+
+            - save_cache:
+                  paths:
+                      - node_modules
+                  key: v1-dependencies-{{ checksum "package-lock.json" }}
+
+            - run:
+                  name: Build floors
+                  command: npm run build
+
+            - run:
+                  name: Run tests
+                  command: npm test
+
+            - persist_to_workspace:
+                  root: ~/project
+                  paths:
+                      - node_modules/
+                      - config/
+                      - package.json
+    deploy:
+        docker:
+            # circleci node image version
+            - image: circleci/node:12
+
+        environment:
+            BASH_ENV: bash_env
+
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ~/project
+
+            - run:
+                  name: Export Stage name into BASH_ENV
+                  command: |
+                      chmod u+x ~/project/.circleci/helpers/setStageName.sh
+                      echo "export STAGE=`~/project/.circleci/helpers/setStageName.sh`" >> $BASH_ENV
+            - run:
+                  name: Prepare deployment file
+                  command: |
+                      echo "deploying to $STAGE"
+                      chmod u+x ~/project/.circleci/helpers/setEnvironmentVariables.sh
+                      ./.circleci/helpers/setEnvironmentVariables.sh
+
+            - run:
+                  name: Set AWS credentials based on stage
+                  command: |
+                      echo "Setting $STAGE-credentials"
+                      chmod u+x ~/project/.circleci/helpers/setAwsCredentials.sh
+                      ./.circleci/helpers/setAwsCredentials.sh
+
+            - run:
+                  name: Deploy to AWS Lambda
+                  command: |
+                      if [ $STAGE == 'prod' ]
+                      then
+                        npm run deploy-prod
+                      else
+                        npm run deploy
+                      fi
+workflows:
+    version: 2
+    staging-build:
+        jobs:
+            - build:
+                  name: build stage
+                  filters:
+                      branches:
+                          only: /(^develop$)/
+            - deploy:
+                  name: deploy stage
+                  requires:
+                      - build stage
+
+    un-tagged-build:
+        jobs:
+            - build:
+                  filters:
+                      tags:
+                          ignore: /(^v.*)/
+                      branches:
+                          ignore: /(^develop$)/
+    tagged-build:
+        jobs:
+            - build:
+                  name: build tag
+                  filters:
+                      branches:
+                          ignore: /.*/
+                      tags:
+                          only: /^v.*/
+            - deploy:
+                  name: deploy prod
+                  filters:
+                      tags:
+                          only: /^v.*/
+                  requires:
+                      - build tag
