@@ -1,6 +1,14 @@
+const codes = {
+  'CHWEA': 'CH-WE-A',
+  'CHWEB': 'CH-WE-B',
+  'CHWEC': 'CH-WE-C',
+  'CHWED': 'CH-WE-D',
+  'CHWEE': 'CH-WE-E',
+};
+
 const buildings = {
   ERNST_NOBS_PLATZ_7: {
-    code: "CH-WE-A",
+    code: codes.CHWEA,
     address: "Ernst-Nobs-Platz 7",
     nickname: "Glass Building",
     imgUrl: "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
@@ -8,7 +16,7 @@ const buildings = {
     value: 'ERNST_NOBS_PLATZ_7'
   },
   WERDSTRASSE_25: {
-    code: "CH-WE-D",
+    code: codes.CHWED,
     address: "Werdstrasse 25",
     nickname: "The Werdino / Post Building",
     imgUrl: "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
@@ -16,7 +24,7 @@ const buildings = {
     value: 'WERDSTRASSE_25'
   },
   WERDSTRASSE_21: {
-    code: "CH-WE-C",
+    code: codes.CHWEC,
     address: "Werdstrasse 21",
     nickname: "The Wood Building",
     imgUrl: "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
@@ -24,7 +32,7 @@ const buildings = {
     value: 'WERDSTRASSE_21'
   },
   STAUFFACHERQUAI_8: {
-    code: "CH-WE-B",
+    code: codes.CHWEB,
     address: "Stauffacherquai 8",
     nickname: "The Classic Building",
     imgUrl: "https://user-images.githubusercontent.com/5614571/76119615-19ed6700-5ff0-11ea-89d6-2f717c8e821b.png",
@@ -52,7 +60,7 @@ const FLOORS = {
  * later when we build the home tab. 
  */
 const ERNST_NOBS_PLATZ_7 = [
-  // 6th Floor
+  // 6th Floor ERNST_NOBS_PLATZ_7
   {
     name: "eat.ch",
     floor: FLOORS.SIX,
@@ -80,8 +88,13 @@ const ERNST_NOBS_PLATZ_7 = [
     floor: FLOORS.SIX,
     ...buildings.ERNST_NOBS_PLATZ_7
   },
+  {
+    name: "Verwaltungsrat",
+    floor: FLOORS.SIX,
+    ...buildings.ERNST_NOBS_PLATZ_7,
+  },
 
-  // 5th Floor
+  // 5th Floor ERNST_NOBS_PLATZ_7
   {
     name: "Nutzermarkt (Tappeiner)",
     floor: FLOORS.FIVE,
@@ -109,14 +122,44 @@ const ERNST_NOBS_PLATZ_7 = [
     ...buildings.ERNST_NOBS_PLATZ_7
   },
 
-  // 4th Floor
+  // 4th Floor ERNST_NOBS_PLATZ_7
   {
     name: "Corporate Services TX Group",
     floor: FLOORS.FOUR,
     ...buildings.ERNST_NOBS_PLATZ_7
+  }, 
+  {
+    name: "GoldenEye",
+    floor: FLOORS.FOUR,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
+  {
+    name: "Skyfall",
+    floor: FLOORS.FOUR,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
+  {
+    name: "Spectre",
+    floor: FLOORS.FOUR,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
+  {
+    name: "For Your Eyes Only",
+    floor: FLOORS.FOUR,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
+  {
+    name: "Thunderball",
+    floor: FLOORS.FOUR,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
+  {
+    name: "Never Say Never Again",
+    floor: FLOORS.FOUR,
+    ...buildings.ERNST_NOBS_PLATZ_7
   },
 
-  // 3rd Floor
+  // 3rd Floor ERNST_NOBS_PLATZ_7
   {
     name: "Advertising: Nationale Medien",
     floor: FLOORS.THREE,
@@ -133,8 +176,28 @@ const ERNST_NOBS_PLATZ_7 = [
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/10016/spaces/54049',
     ...buildings.ERNST_NOBS_PLATZ_7
   },
+  {
+    name: "Goldfinger",
+    floor: FLOORS.THREE,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
+  {
+    name: "Moonraker",
+    floor: FLOORS.THREE,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
+  {
+    name: "Casino Royale",
+    floor: FLOORS.THREE,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
+  {
+    name: "From Russia With Love",
+    floor: FLOORS.THREE,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
 
-  // 2nd Floor
+  // 2nd Floor ERNST_NOBS_PLATZ_7
   {
     name: "TX Markets Leiung",
     floor: FLOORS.TWO,
@@ -154,9 +217,44 @@ const ERNST_NOBS_PLATZ_7 = [
     name: "Sitzungszimmer A2.1 New York",
     floor: FLOORS.TWO,
     ...buildings.ERNST_NOBS_PLATZ_7
+  }, 
+  {
+    name: "Office Huegli",
+    floor: FLOORS.TWO,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
+  {
+    name: "Arkham Asylum",
+    floor: FLOORS.TWO,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
+  {
+    name: "District 9",
+    floor: FLOORS.TWO,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
+  {
+    name: "Project Area",
+    floor: FLOORS.TWO,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
+  {
+    name: "Azkaban",
+    floor: FLOORS.TWO,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
+  {
+    name: "TXM-Cats&Dogs",
+    floor: FLOORS.TWO,
+    ...buildings.ERNST_NOBS_PLATZ_7
+  },
+  {
+    name: "TXM-Hub",
+    floor: FLOORS.TWO,
+    ...buildings.ERNST_NOBS_PLATZ_7
   },
 
-  // 1st Floor
+  // 1st Floor ERNST_NOBS_PLATZ_7
   {
     name: "Homegate",
     floor: FLOORS.ONE,
@@ -167,8 +265,33 @@ const ERNST_NOBS_PLATZ_7 = [
     floor: FLOORS.ONE,
     ...buildings.ERNST_NOBS_PLATZ_7,
   },
+  {
+    name: "Fir",
+    floor: FLOORS.ONE,
+    ...buildings.ERNST_NOBS_PLATZ_7,
+  },
+  {
+    name: "Spruce",
+    floor: FLOORS.ONE,
+    ...buildings.ERNST_NOBS_PLATZ_7,
+  },
+  {
+    name: "Ash",
+    floor: FLOORS.ONE,
+    ...buildings.ERNST_NOBS_PLATZ_7,
+  },
+  {
+    name: "Maple",
+    floor: FLOORS.ONE,
+    ...buildings.ERNST_NOBS_PLATZ_7,
+  },
+  {
+    name: "Oak",
+    floor: FLOORS.ONE,
+    ...buildings.ERNST_NOBS_PLATZ_7,
+  },
 
-  // 0th Floor
+  // 0th Floor ERNST_NOBS_PLATZ_7
   {
     name: "Informatik",
     floor: FLOORS.ZERO,
@@ -186,7 +309,7 @@ const ERNST_NOBS_PLATZ_7 = [
     ...buildings.ERNST_NOBS_PLATZ_7
   },
 
-  // Floor -1
+  // Floor -1 ERNST_NOBS_PLATZ_7
   {
     name: "Co Working Space",
     floor: FLOORS.NEGATIVE1,
@@ -225,19 +348,26 @@ const ERNST_NOBS_PLATZ_7 = [
  * later when we build the home tab. 
  */
 const WERDSTRASSE_25 = [
-  // 5th Floor
+  // 5th Floor WERDSTRASSE_25
   {
     name: "Immobilien-Management",
     floor: FLOORS.FIVE,
     ...buildings.WERDSTRASSE_25
   },
 
-  // 4th Floor
+  // 4th Floor WERDSTRASSE_25
   {
     name: 'Sitzungszimmer E4.1 Bellevue',
     floor: FLOORS.FOUR,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11698/spaces/54014',
-    ...buildings.WERDSTRASSE_25
+    ...buildings.WERDSTRASSE_25,
+    code: codes.CHWEE,
+  },
+  {
+    name: 'Bern',
+    floor: FLOORS.FOUR,
+    ...buildings.WERDSTRASSE_25,
+    code: codes.CHWEE,
   },
   {
     name: "Unternehmensentwicklung",
@@ -253,6 +383,11 @@ const WERDSTRASSE_25 = [
     name: "Unternehmensleitung",
     floor: FLOORS.FOUR,
     ...buildings.WERDSTRASSE_25
+  },  
+  {
+    name: "Unternehmungsleitung",
+    floor: FLOORS.FOUR,
+    ...buildings.WERDSTRASSE_25
   },
   {
     name: "Verwalungsrat",
@@ -260,21 +395,26 @@ const WERDSTRASSE_25 = [
     ...buildings.WERDSTRASSE_25
   }, 
 
-  // 3rd Floor
+  // 3rd Floor WERDSTRASSE_25
   {
     name: "Redaktion Tamedia DCH",
     floor: FLOORS.THREE,
     ...buildings.WERDSTRASSE_25
   },
 
-  // 2nd Floor
+  // 2nd Floor WERDSTRASSE_25
   {
     name: "Tages-Anzeiger",
     floor: FLOORS.TWO,
     ...buildings.WERDSTRASSE_25
   },
+  {
+    name: "Tagi",
+    floor: FLOORS.TWO,
+    ...buildings.WERDSTRASSE_25
+  },
 
-  // 1st Floor
+  // 1st Floor WERDSTRASSE_25
   {
     name: "TES, Redaktion Tamedia",
     floor: FLOORS.ONE,
@@ -316,7 +456,8 @@ const WERDSTRASSE_25 = [
     floor: FLOORS.ONE,
     robinLink:
       "https://dashboard.robinpowered.com/tamedia/locations/11701/spaces/54069",
-    ...buildings.WERDSTRASSE_25
+    ...buildings.WERDSTRASSE_25,
+    code: codes.CHWED,
   },
   {
     name: "Sitzungszimmer D1.7 Paris",
@@ -361,7 +502,7 @@ const WERDSTRASSE_25 = [
     ...buildings.WERDSTRASSE_25
   },
 
-  // Z Floor
+  // Z Floor WERDSTRASSE_25
   {
     name: "Hausdienst (Bouygues)",
     floor: FLOORS.Z,
@@ -378,7 +519,7 @@ const WERDSTRASSE_25 = [
     ...buildings.WERDSTRASSE_25
   },
 
-  // 0th Floor
+  // 0th Floor WERDSTRASSE_25
   {
     name: "Hauspost",
     floor: FLOORS.ZERO,
@@ -398,6 +539,7 @@ const WERDSTRASSE_25 = [
  * later when we build the home tab. 
  */
 const WERDSTRASSE_21 = [
+  // 5th floor WERDSTRASSE_21
   {
     name: "20 Minuten Redaktion",
     floor: FLOORS.FIVE,
@@ -415,7 +557,7 @@ const WERDSTRASSE_21 = [
     ...buildings.WERDSTRASSE_21
   },
   
-  // 4th Floor
+  // 4th Floor WERDSTRASSE_21
   {
     name: "20 Minuten Verlag",
     floor: FLOORS.FOUR,
@@ -442,8 +584,13 @@ const WERDSTRASSE_21 = [
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54061',
     ...buildings.WERDSTRASSE_21
   },
+  {
+    name: "Comfort Zone",
+    floor: FLOORS.FOUR,
+    ...buildings.WERDSTRASSE_21
+  },
 
-  // 3rd Floor
+  // 3rd Floor WERDSTRASSE_21
   {
     name: "Goldbach Publishing",
     floor: FLOORS.THREE,
@@ -467,7 +614,7 @@ const WERDSTRASSE_21 = [
     ...buildings.WERDSTRASSE_21
   },
 
-  // 2nd Floor
+  // 2nd Floor WERDSTRASSE_21
   {
     name: "Redaktion Tamedia Newsroom",
     floor: FLOORS.TWO,
@@ -492,11 +639,12 @@ const WERDSTRASSE_21 = [
   {
     name: "Sitzungszimmer C2.3 Hongkong",
     floor: FLOORS.TWO,
+    code: codes.CHWEC,
     robinLink: 'https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54057',
     ...buildings.WERDSTRASSE_21
   },
 
-  // 1st Floor
+  // 1st Floor WERDSTRASSE_21
   {
     name: "Tamedia Product, Revenue und Technology",
     floor: FLOORS.ONE,
@@ -515,14 +663,14 @@ const WERDSTRASSE_21 = [
     ...buildings.WERDSTRASSE_21
   },
 
-  // Z Floor
+  // Z Floor WERDSTRASSE_21
   {
     name: "Zwischengeschoss",
     floor: FLOORS.Z,
     ...buildings.WERDSTRASSE_21
   },
 
-  // Oth Floor
+  // Oth Floor WERDSTRASSE_21
   {
     name: "Empfang",
     floor: FLOORS.ZERO,
@@ -542,6 +690,7 @@ const WERDSTRASSE_21 = [
  * later when we build the home tab. 
  */
 const STAUFFACHERQUAI_8 = [
+  // 5th floor STAUFFACHERQUAI_8
   {
     name: "20 Minuten Redaktion",
     floor: FLOORS.FIVE,
@@ -552,6 +701,8 @@ const STAUFFACHERQUAI_8 = [
     floor: FLOORS.FIVE,
     ...buildings.STAUFFACHERQUAI_8
   },
+
+  // 4th floor STAUFFACHERQUAI_8
   {
     name: "Finanzen",
     floor: FLOORS.FOUR,

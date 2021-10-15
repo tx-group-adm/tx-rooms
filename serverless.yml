@@ -17,6 +17,7 @@ provider:
                       - lambda:InvokeFunction
                   Resource: "*"
     environment:
+        STAGE: ${file(./config/config.${self:provider.stage, 'dev'}.json):STAGE}
         SLACK_SIGNING_SECRET: ${file(./config/config.${self:provider.stage, 'dev'}.json):SLACK_SIGNING_SECRET}
         SLACK_VERIFICATION_TOKEN: ${file(./config/config.${self:provider.stage, 'dev'}.json):SLACK_VERIFICATION_TOKEN}
         SLACK_BOT_USER_OAUTH_ACCESS_TOKEN: ${file(./config/config.${self:provider.stage, 'dev'}.json):SLACK_BOT_USER_OAUTH_ACCESS_TOKEN}
