@@ -64,6 +64,17 @@ module.exports = [
     "slug": "vrsitzungszimmer"
   },
   {
+    "name": "Verwaltungsrat",
+    "floor": "Floor 6",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "verwaltungsrat"
+  },
+  {
     "name": "Nutzermarkt (Tappeiner)",
     "floor": "Floor 5",
     "code": "CH-WE-A",
@@ -131,6 +142,72 @@ module.exports = [
     "slug": "corporateservicestxgroup"
   },
   {
+    "name": "GoldenEye",
+    "floor": "Floor 4",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "goldeneye"
+  },
+  {
+    "name": "Skyfall",
+    "floor": "Floor 4",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "skyfall"
+  },
+  {
+    "name": "Spectre",
+    "floor": "Floor 4",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "spectre"
+  },
+  {
+    "name": "For Your Eyes Only",
+    "floor": "Floor 4",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "foryoureyesonly"
+  },
+  {
+    "name": "Thunderball",
+    "floor": "Floor 4",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "thunderball"
+  },
+  {
+    "name": "Never Say Never Again",
+    "floor": "Floor 4",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "neversayneveragain"
+  },
+  {
     "name": "Advertising: Nationale Medien",
     "floor": "Floor 3",
     "code": "CH-WE-A",
@@ -163,6 +240,50 @@ module.exports = [
     "icon": ":tumbler_glass:",
     "value": "ERNST_NOBS_PLATZ_7",
     "slug": "sitzungszimmera31chicago"
+  },
+  {
+    "name": "Goldfinger",
+    "floor": "Floor 3",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "goldfinger"
+  },
+  {
+    "name": "Moonraker",
+    "floor": "Floor 3",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "moonraker"
+  },
+  {
+    "name": "Casino Royale",
+    "floor": "Floor 3",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "casinoroyale"
+  },
+  {
+    "name": "From Russia With Love",
+    "floor": "Floor 3",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "fromrussiawithlove"
   },
   {
     "name": "TX Markets Leiung",
@@ -209,6 +330,83 @@ module.exports = [
     "slug": "sitzungszimmera21newyork"
   },
   {
+    "name": "Office Huegli",
+    "floor": "Floor 2",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "officehuegli"
+  },
+  {
+    "name": "Arkham Asylum",
+    "floor": "Floor 2",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "arkhamasylum"
+  },
+  {
+    "name": "District 9",
+    "floor": "Floor 2",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "district9"
+  },
+  {
+    "name": "Project Area",
+    "floor": "Floor 2",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "projectarea"
+  },
+  {
+    "name": "Azkaban",
+    "floor": "Floor 2",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "azkaban"
+  },
+  {
+    "name": "TXM-Cats&Dogs",
+    "floor": "Floor 2",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "txmcatsdogs"
+  },
+  {
+    "name": "TXM-Hub",
+    "floor": "Floor 2",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "txmhub"
+  },
+  {
     "name": "Homegate",
     "floor": "Floor 1",
     "code": "CH-WE-A",
@@ -229,6 +427,61 @@ module.exports = [
     "icon": ":tumbler_glass:",
     "value": "ERNST_NOBS_PLATZ_7",
     "slug": "sitzungszimmera11sanfrancisco"
+  },
+  {
+    "name": "Fir",
+    "floor": "Floor 1",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "fir"
+  },
+  {
+    "name": "Spruce",
+    "floor": "Floor 1",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "spruce"
+  },
+  {
+    "name": "Ash",
+    "floor": "Floor 1",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "ash"
+  },
+  {
+    "name": "Maple",
+    "floor": "Floor 1",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "maple"
+  },
+  {
+    "name": "Oak",
+    "floor": "Floor 1",
+    "code": "CH-WE-A",
+    "address": "Ernst-Nobs-Platz 7",
+    "nickname": "Glass Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119608-15c14980-5ff0-11ea-9a2b-26af4b4a3021.png",
+    "icon": ":tumbler_glass:",
+    "value": "ERNST_NOBS_PLATZ_7",
+    "slug": "oak"
   },
   {
     "name": "Informatik",
@@ -338,13 +591,24 @@ module.exports = [
     "name": "Sitzungszimmer E4.1 Bellevue",
     "floor": "Floor 4",
     "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11698/spaces/54014",
-    "code": "CH-WE-D",
+    "code": "CH-WE-E",
     "address": "Werdstrasse 25",
     "nickname": "The Werdino / Post Building",
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
     "icon": ":postbox:",
     "value": "WERDSTRASSE_25",
     "slug": "sitzungszimmere41bellevue"
+  },
+  {
+    "name": "Bern",
+    "floor": "Floor 4",
+    "code": "CH-WE-E",
+    "address": "Werdstrasse 25",
+    "nickname": "The Werdino / Post Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
+    "icon": ":postbox:",
+    "value": "WERDSTRASSE_25",
+    "slug": "bern"
   },
   {
     "name": "Unternehmensentwicklung",
@@ -380,6 +644,17 @@ module.exports = [
     "slug": "unternehmensleitung"
   },
   {
+    "name": "Unternehmungsleitung",
+    "floor": "Floor 4",
+    "code": "CH-WE-D",
+    "address": "Werdstrasse 25",
+    "nickname": "The Werdino / Post Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
+    "icon": ":postbox:",
+    "value": "WERDSTRASSE_25",
+    "slug": "unternehmungsleitung"
+  },
+  {
     "name": "Verwalungsrat",
     "floor": "Floor 4",
     "code": "CH-WE-D",
@@ -411,6 +686,17 @@ module.exports = [
     "icon": ":postbox:",
     "value": "WERDSTRASSE_25",
     "slug": "tagesanzeiger"
+  },
+  {
+    "name": "Tagi",
+    "floor": "Floor 2",
+    "code": "CH-WE-D",
+    "address": "Werdstrasse 25",
+    "nickname": "The Werdino / Post Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119622-1f4ab180-5ff0-11ea-96fd-c93ea87bd87f.png",
+    "icon": ":postbox:",
+    "value": "WERDSTRASSE_25",
+    "slug": "tagi"
   },
   {
     "name": "TES, Redaktion Tamedia",
@@ -711,6 +997,17 @@ module.exports = [
     "slug": "sitzungszimmerc42kualalumpur"
   },
   {
+    "name": "Comfort Zone",
+    "floor": "Floor 4",
+    "code": "CH-WE-C",
+    "address": "Werdstrasse 21",
+    "nickname": "The Wood Building",
+    "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
+    "icon": ":evergreen_tree:",
+    "value": "WERDSTRASSE_21",
+    "slug": "comfortzone"
+  },
+  {
     "name": "Goldbach Publishing",
     "floor": "Floor 3",
     "code": "CH-WE-C",
@@ -804,8 +1101,8 @@ module.exports = [
   {
     "name": "Sitzungszimmer C2.3 Hongkong",
     "floor": "Floor 2",
-    "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54057",
     "code": "CH-WE-C",
+    "robinLink": "https://dashboard.robinpowered.com/tamedia/locations/11700/spaces/54057",
     "address": "Werdstrasse 21",
     "nickname": "The Wood Building",
     "imgUrl": "https://user-images.githubusercontent.com/5614571/76119618-1c4fc100-5ff0-11ea-9380-dbd513c6e221.png",
