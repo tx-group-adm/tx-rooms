@@ -22,7 +22,7 @@
   "devDependencies": {
     "jest": "^25.1.0",
     "ngrok": "^3.2.7",
-    "serverless": "^2.61.0",
+    "serverless": "^3.27.0",
     "serverless-offline": "^6.0.0-alpha.67",
     "serverless-plugin-warmup": "^6.0.0"
   },
